@@ -1,0 +1,16 @@
+@use './variables' as *;
+
+h1, h2, h3, h4, h5, h6, button{
+    margin: 0;
+    padding: 0;
+}
+
+p, a, li{
+    font-size: clamp(1rem,2vw,0.8rem);
+}
+
+p{
+    line-height: 1.6rem;
+    letter-spacing: 0.05rem;
+    font-size: clamp(0.8rem,2vw,1rem);
+}
