@@ -1,0 +1,42 @@
+.headerNav{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto 40px auto;
+    position: relative;
+    .logo{
+        display: flex;
+        flex-basis: 50%;
+    }
+    nav{
+        flex-basis: 50%;
+    }
+    .navFlex{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.headerNav:before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -25px;
+	width: 0;
+	border-bottom: solid 1px #000;
+	animation: border_anim 3s linear forwards;
+}
+
+@keyframes border_anim {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 100%;
+	}
+}
+
+.hero{
+    .headerTitle{
+        flex-direction: column;
+    }
+}

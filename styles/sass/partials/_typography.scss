@@ -1,16 +1,23 @@
 @use './variables' as *;
 
-h1, h2, h3, h4, h5, h6, button{
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
 
 p, a, li{
+    font-family: 'Abel', sans-serif;
     font-size: clamp(1rem,2vw,0.8rem);
+    margin: 0;
 }
 
 p{
     line-height: 1.6rem;
     letter-spacing: 0.05rem;
     font-size: clamp(0.8rem,2vw,1rem);
+}
+
+input, label, textarea{
+    font-family: 'Roboto Mono', monospace;
 }
