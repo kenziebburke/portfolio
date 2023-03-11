@@ -161,17 +161,25 @@
                         <img src="./assets/comfortjournal.jpg" alt="Rendering of a screen grab from Comfort Journal webpage, on the left is a tree and on the right title comfort journal with date and squiggle lines">
                     </figure>
                     <div class="flexContainer">
-                        <p>Comfort Journal</p>
+                        <!-- link project -->
+                        <a href="">Comfort Journal</a>
                         <button>
                             <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </button>
                         <p>2023</p>
                     </div>
-                    <aside>
+                    <aside id="JournalDD">
                         <p class="sr-only">drop down menu with information pertaining to Comfort Journal.</p>
-                        <p>01</p>
-                        <!-- insert text pertaining to project here -->
-                        <p></p>
+                        <div class="flexContainer">
+                            <p>01</p>
+                            <!-- insert text pertaining to project here -->
+                            <p>Comfort Journal was a collaborative project.  My partner and I designed a live journaling system using HTML, SCSS, and JavaScript, with realtime data storage on Firebase. The system was designed to provide a user-friendly and engaging experience, with each entry automatically timestamped with the date. To inspire users, we implemented a feature that randomly populates quotes on page load and an image carousel to spark creativity. Using Git collaboration and peer programming techniques, we were able to work together seamlessly, allowing for efficient and effective development.</p>
+                        </div>
+                        <div class="flexContainer">
+                            <!-- link to both -->
+                            <button><a href="">Repo</a></button>
+                            <button><a href="">Live</a></button>
+                        </div>
                     </aside>
                     <div class="flexContainer bottomProjects">
                         <div class="flexContainer shoeKloset">
@@ -179,17 +187,25 @@
                                 <img src="./assets/shoekloset.jpg" alt="Rendering of a screen grab from Shoe Kloset webpage, on the left is the title of shoe kloset and text find something new and on the right is legs wearing sneakers">
                             </figure>
                             <div class="flexContainer">
-                                <p>Shoe Kloset</p>
+                                <!-- link live project -->
+                                <a href="">Shoe Kloset</a>
                                 <button>
                                     <i class="fa fa-angle-down" aria-hidden="true"></i>
                                 </button>
                                 <p>2023</p>
                             </div>
-                            <aside>
+                            <aside id="klosetDD">
                                 <p class="sr-only">drop down menu with information pertaining to Shoe Kloset.</p>
-                                <p>01</p>
-                                <!-- insert text pertaining to project here -->
-                                <p></p>
+                                <div class="flexContainer">
+                                    <p>02</p>
+                                    <p>Shoe Kloset is a conversion of a  PSD file and converted it into a live website using HTML, SCSS, and JavaScript. The website was designed to be both accessible and responsive, and I made sure to adhere to best practices for both. I followed the DRY code principle and used SCSS to write modular and reusable CSS components. Finally, I used JavaScript to add interactivity to the website. The end result was a website that not only looked great and functioned flawlessly, but also provided a cohesive user interface experience.
+                                    </p>
+                                </div>
+                                <div class="flexContainer">
+                                    <!-- link to both -->
+                                    <button><a href="">Repo</a></button>
+                                    <button><a href="">Live</a></button>
+                                </div>
                             </aside>
                         </div>
                         <div class="flexContainer arora">
@@ -197,21 +213,27 @@
                                 <img src="./assets/arora.jpg" alt="Rendering of a screen grab from Arora webpage, on the left is the title of Arora and on the right is a woman wearing a large chain">
                             </figure>
                             <div class="flexContainer">
-                                <p>Arora</p>
+                                <!-- link arora project -->
+                                <a href="">Arora</a>
                                 <button>
                                     <i class="fa fa-angle-down" aria-hidden="true"></i>
                                 </button>
                                 <p>2023</p>
                             </div> 
-                            <aside>
+                            <aside id="aroraDD">
                                 <p class="sr-only">drop down menu with information pertaining to Arora.</p>
-                                <p>01</p>
-                                <!-- insert text pertaining to project here -->
-                                <p></p>
+                                <div class="flexContainer">
+                                    <p>03</p>
+                                    <p>Arora is a project where I converted a PSD file into a fully accessible and responsive website using HTML and CSS. In addition to ensuring the website's design accurately matched the PSD file, I made sure that the website was built with accessibility in mind.  I also implemented responsive design techniques, allowing the website to adapt to different screen sizes and devices. To make sure the code was easy to maintain and update, I followed the DRY principle, eliminating redundant code and organizing the CSS using modular and reusable components.</p>
+                                </div>
+                                <div class="flexContainer">
+                                    <!-- link to both -->
+                                    <button><a href="">Repo</a></button>
+                                    <button><a href="">Live</a></button>
+                                </div>
                             </aside>
                         </div><!-- end of flexContainer arora -->
-                    </div>
-                    <!-- end of flexContainer  bottomProjects-->
+                    </div><!-- end of flexContainer  bottomProjects-->
                 </div> <!-- end of flexContainer featuredProjects -->
             </div><!-- end of wrapper -->
         </section>
@@ -312,6 +334,7 @@
     </footer>
 
     <!-- LINK TO JS FILE -->
+    <script type="module" src="/script.js"></script>
 
 </body>
 </html>
