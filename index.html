@@ -228,6 +228,53 @@
                         <li><a href="https://www.linkedin.com/in/kenzieburke/">LI</a></li>
                         <li><a href="https://calendly.com/kenzieburkecodes">C</a></li>
                     </ul>
+                    <button><a href="https://www.canva.com/design/DAFa36Opw6s/ITSbmY6g1R7UTx0TdzJsig/view?utm_content=DAFa36Opw6s&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">Resume</a></button>
+                </div>
+                <form action="#" method="#" class="contactForm" name="contactForm">
+                    <!-- name input -->
+                    <label for="userName" class="sr-only">Name</label>
+                    <input type="text" id="userName" name="userName" placeholder="Your Name"
+                    required="true">
+
+                    <!-- email input -->
+                    <label for="userEmail" class="sr-only">Email</label>
+                    <input type="text" id="userEmail" name="userName" placeholder="Your Email" required="true">
+
+                    <!-- message input -->
+                    <label for="message">Your Message</label>
+                    <textarea name="message" id="message" required="true" minlength="5"></textarea>
+
+                    <button type="submit">Send message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="about">
+            <div class="wrapper">
+                <h2>About</h2>
+                <div class="flexContainer">
+                    <figure>
+                        <!-- add alt text -->
+                        <img src="./assets/studio.jpg" alt="">
+                    </figure>
+                    <div class="flexContainer">
+                        <article class="flexContainer">
+                            <p>01</p>
+                            <h3>Vision</h3>
+                            <p>Committed to promoting accessibility in web development, with a vision of a future where all users have equal access to online information and services. Continuously seeking to learn and integrate new technologies and techniques that improve accessibility for users with disabilities and diverse needs.</p>
+                        </article>
+                        <article class="flexContainer">
+                            <p>02</p>
+                            <h3>Innovation</h3>
+                            <p>Passionate about innovation in web development, with a track record of staying ahead of the curve on emerging technologies and trends. Skilled in leveraging cutting-edge tools and frameworks to develop dynamic, high-performing websites and applications that push the boundaries of what's possible on the web.</p>
+                        </article>
+                        <article class="flexContainer">
+                            <p>03</p>
+                            <h3>Connection</h3>
+                            <p>Valuing meaningful connections with colleagues, with a proven ability to build positive, collaborative relationships that foster a supportive and productive work environment. Skilled in effective communication and active listening, with an innate ability to understand and empathize with diverse perspectives and experiences.</p>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
@@ -235,7 +282,33 @@
 
     <!-- FOOTER SECTION -->
     <footer>
-
+        <div class="flexContainer wrapper">
+            <div class="flexContainer footerLeft">
+                <!-- LOGO -->
+                <div class="logo">
+                    <figure>
+                        <img src="./assets/logo.png" alt="logo with multiple box outlines the overlap one another">
+                    </figure>
+                    <p>KB</p>
+                </div>
+                <p>Toronto, Ontario</p>
+                <ul>
+                    <li><a href="https://github.com/kenziebburke">GH</a></li>
+                    <li><a href="https://www.linkedin.com/in/kenzieburke/">LI</a></li>
+                    <li><a href="https://calendly.com/kenzieburkecodes">C</a></li>
+                </ul>
+            </div>
+            <!-- NAVIGATION MENU -->
+            <nav id="navMenu" class="navMenu" aria-label="Navigation Menu">
+                <!-- nav UL -->
+                <ul class="navFlex">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><button><a href="#contact">Let's Talk</a></button></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
 
     <!-- LINK TO JS FILE -->
