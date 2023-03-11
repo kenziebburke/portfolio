@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- LINK TO STYLESHEET -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 
 	<!-- LINK TO GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,18 +16,19 @@
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
     <!-- LINK FAVICON -->
+    <link rel="icon" type="image/x-icon" href="./assets/icons8-bookmark-16.png">
 
     <title>Kenzie Burke</title>
 </head>
+<!-- GO BACK AND CHANGE ALL THE LOGOS TO SVG SPRITE DO THE RESEARCH!! ALSO ASK IN HELP CUE -->
 <body>
     <!-- HEADER -->
     <header>
         <div class="flexContainer wrapper">
             <!-- LOGO -->
             <div class="logo">
-                <!-- add alt text -->
                 <figure>
-                    <img src="./assets/logo.png" alt="">
+                    <img src="./assets/logo.png" alt="logo with multiple box outlines the overlap one another">
                 </figure>
                 <p>KB</p>
             </div>
@@ -155,63 +156,78 @@
         <section id="projects" class="projects">
             <div class="wrapper flexContainer">
                 <h2>Featured Work</h2>
-                <div class="flexContainer comfortJournal">
+                <div class="flexContainer featuredProjects">
                     <figure>
                         <img src="./assets/comfortjournal.jpg" alt="Rendering of a screen grab from Comfort Journal webpage, on the left is a tree and on the right title comfort journal with date and squiggle lines">
                     </figure>
                     <div class="flexContainer">
                         <p>Comfort Journal</p>
-                        <p>2023</p>
                         <button>
                             <i class="fa fa-angle-down" aria-hidden="true"></i>
                         </button>
+                        <p>2023</p>
                     </div>
-                    <article>
+                    <aside>
+                        <p class="sr-only">drop down menu with information pertaining to Comfort Journal.</p>
+                        <p>01</p>
                         <!-- insert text pertaining to project here -->
-                        <!-- inset icon with 01 -->
-                        <!-- insert sr only text explaining the drop down -->
                         <p></p>
-                    </article>
-                    <div class="flexContainer">
+                    </aside>
+                    <div class="flexContainer bottomProjects">
                         <div class="flexContainer shoeKloset">
                             <figure>
-                                <!-- insert img here -->
                                 <img src="./assets/shoekloset.jpg" alt="Rendering of a screen grab from Shoe Kloset webpage, on the left is the title of shoe kloset and text find something new and on the right is legs wearing sneakers">
                             </figure>
                             <div class="flexContainer">
                                 <p>Shoe Kloset</p>
-                                <p>2023</p>
                                 <button>
                                     <i class="fa fa-angle-down" aria-hidden="true"></i>
                                 </button>
+                                <p>2023</p>
                             </div>
-                            <article>
+                            <aside>
+                                <p class="sr-only">drop down menu with information pertaining to Shoe Kloset.</p>
+                                <p>01</p>
                                 <!-- insert text pertaining to project here -->
-                                <!-- inset icon with 01 -->
-                                <!-- insert sr only text explaining the drop down -->
                                 <p></p>
-                            </article>
+                            </aside>
                         </div>
                         <div class="flexContainer arora">
                             <figure>
-                                <!-- insert img here -->
                                 <img src="./assets/arora.jpg" alt="Rendering of a screen grab from Arora webpage, on the left is the title of Arora and on the right is a woman wearing a large chain">
                             </figure>
                             <div class="flexContainer">
                                 <p>Arora</p>
-                                <p>2023</p>
                                 <button>
                                     <i class="fa fa-angle-down" aria-hidden="true"></i>
                                 </button>
-                            </div>
-                            <article>
+                                <p>2023</p>
+                            </div> 
+                            <aside>
+                                <p class="sr-only">drop down menu with information pertaining to Arora.</p>
+                                <p>01</p>
                                 <!-- insert text pertaining to project here -->
-                                <!-- inset icon with 01 -->
-                                <!-- insert sr only text explaining the drop down -->
                                 <p></p>
-                            </article>
-                        </div>
+                            </aside>
+                        </div><!-- end of flexContainer arora -->
                     </div>
+                    <!-- end of flexContainer  bottomProjects-->
+                </div> <!-- end of flexContainer featuredProjects -->
+            </div><!-- end of wrapper -->
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="contact">
+            <div class="wrapper flexContainer">
+                <div class="flexContainer contactTitle">
+                    <p>Contact</p>
+                    <h2>Creating together.</h2>
+                    <p>Find me on</p>
+                    <ul>
+                        <li><a href="https://github.com/kenziebburke">GH</a></li>
+                        <li><a href="https://www.linkedin.com/in/kenzieburke/">LI</a></li>
+                        <li><a href="https://calendly.com/kenzieburkecodes">C</a></li>
+                    </ul>
                 </div>
             </div>
         </section>
