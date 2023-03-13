@@ -1,0 +1,42 @@
+@mixin circle{
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+
+@mixin button {
+    background-color: #000;
+    border:1px solid #000;
+    border-radius: 5px;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+}
+
+@mixin buttonAnim{
+    content: attr(data-hover);
+    position: absolute;
+    top: 5px; 
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    color:#fdfbf5;
+    transform: translate(-100%,0);
+    transition: all .3s ease-in-out;
+    text-transform: uppercase;
+}
+
+@mixin borderAnim {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -25px;
+    width: 0;
+    border-bottom: solid 1px #000;
+    animation: border_anim 3s linear forwards;
+}

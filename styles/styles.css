@@ -278,10 +278,15 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
-p, a, li {
+p, a, li, button {
   font-family: "Abel", sans-serif;
   font-size: clamp(1rem, 2vw, 0.8rem);
   margin: 0;
+}
+
+li, a {
+  text-transform: uppercase;
+  color: black;
 }
 
 p {
@@ -308,12 +313,18 @@ input, label, textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+.headerNav .logo figure {
+  margin-top: -10px;
+}
+.headerNav .logo p {
+  font-weight: bold;
 }
 .headerNav nav {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
 }
 .headerNav .navFlex {
   display: -webkit-box;
@@ -322,6 +333,86 @@ input, label, textarea {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-right: 3%;
+  border-right: 1px solid black;
+  /*button:before (attr data-hover)*/
+  /*button div (button text before hover)*/
+}
+.headerNav .navFlex a {
+  line-height: 32px;
+}
+.headerNav .navFlex button {
+  background-color: #000;
+  border: 1px solid #000;
+  border-radius: 5px;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+}
+.headerNav .navFlex button:hover,
+.headerNav .navFlex button:focus {
+  cursor: pointer;
+}
+.headerNav .navFlex button:hover:before,
+.headerNav .navFlex button:focus:before {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+.headerNav .navFlex button:before {
+  content: attr(data-hover);
+  position: absolute;
+  top: 5px;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  color: #fdfbf5;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+.headerNav .navFlex button:hover div,
+.headerNav .navFlex button:focus div {
+  opacity: 0;
+  -webkit-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+}
+.headerNav .navFlex button div {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #fdfbf5;
+}
+.headerNav .socialsLinks {
+  -ms-flex-preferred-size: 13%;
+      flex-basis: 13%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.circle {
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+.circle a {
+  line-height: 32px;
+}
+
+.circle:hover,
+.circle:focus {
+  background-color: #000;
+}
+.circle:hover a,
+.circle:focus a {
+  color: #fdfbf5;
 }
 
 .headerNav:before {
@@ -352,11 +443,56 @@ input, label, textarea {
     width: 100%;
   }
 }
+.hero {
+  padding: 40px 0;
+  position: relative;
+}
 .hero .headerTitle {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  margin-right: 5%;
+}
+.hero .headerTitle h1 {
+  font-size: clamp(4rem, 2vw, 2rem);
+  padding-bottom: 5px;
+}
+.hero .headerTitle p {
+  font-size: clamp(1.5rem, 2vw, 1rem);
+  padding-bottom: 250px;
+}
+.hero .headerTitle figure {
+  height: 50px;
+  width: 50px;
+}
+.hero .headerTitle figure img {
+  -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  opacity: 1;
+}
+.hero figure {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  height: 100%;
+}
+.hero figure img {
+  border-radius: 15px;
+}
+
+.hero:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  width: 0;
+  border-bottom: solid 1px #000;
+  -webkit-animation: border_anim 3s linear forwards;
+          animation: border_anim 3s linear forwards;
 }
 
 @media (max-width: 950px) {

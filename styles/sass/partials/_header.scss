@@ -1,3 +1,6 @@
+@use './mixins' as *;
+
+// NAVIGATION MENU STYLING
 .headerNav{
     display: flex;
     justify-content: space-between;
@@ -5,25 +8,84 @@
     position: relative;
     .logo{
         display: flex;
-        flex-basis: 50%;
+        flex-basis: 45%;
+        figure{
+            margin-top: -10px;
+        }
+        p{
+            font-weight: bold;
+        }
     }
     nav{
-        flex-basis: 50%;
+        flex-basis: 40%;
     }
     .navFlex{
         display: flex;
         justify-content: space-between;
+        padding-right: 3%;
+        border-right: 1px solid black;
+        a{
+            line-height: 32px;
+        }
+        button{
+            @include button;
+        }
+        
+        button:hover,
+        button:focus{
+            cursor: pointer
+        }
+
+        /*button:before (attr data-hover)*/
+        button:hover:before,
+        button:focus:before{
+            opacity: 1; 
+            transform: 
+            translate(0,0);
+        }
+
+        button:before{
+            @include buttonAnim;
+        }
+
+        /*button div (button text before hover)*/
+        button:hover div,
+        button:focus div{
+            opacity: 0; 
+            transform: translate(100%,0)
+        }
+
+        button div{
+            transition: all .3s ease-in-out;
+            color: #fdfbf5;
+        }
+    }
+
+    .socialsLinks{
+        flex-basis: 13%;
+        justify-content: space-between
     }
 }
 
+.circle{
+    a{
+        line-height: 32px;
+    }
+    @include circle;
+}
+
+.circle:hover,
+.circle:focus{
+    a{
+        color: #fdfbf5;
+    }
+    background-color: #000;
+}
+
+
+
 .headerNav:before{
-	content: '';
-	position: absolute;
-	left: 0;
-	bottom: -25px;
-	width: 0;
-	border-bottom: solid 1px #000;
-	animation: border_anim 3s linear forwards;
+    @include borderAnim;
 }
 
 @keyframes border_anim {
@@ -35,8 +97,42 @@
 	}
 }
 
+
+// HEADER HERO STYLING
 .hero{
+    padding: 40px 0;
+    position: relative;
     .headerTitle{
         flex-direction: column;
+        flex-basis: 50%;
+        margin-right: 5%;
+        h1{
+            font-size: clamp(4rem,2vw,2rem);
+            padding-bottom: 5px;
+        }
+        p{
+            font-size: clamp(1.5rem,2vw,1rem);
+            padding-bottom: 250px;
+        }
+        figure{
+            height: 50px;
+            width: 50px;
+            img{
+                transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+                transform-style: preserve-3d;
+                opacity: 1;
+            }
+        }
     }
+    figure{
+        flex-basis: 45%;
+        height: 100%;
+        img{
+            border-radius: 15px;
+        }
+    }
+}
+
+.hero:before{
+    @include borderAnim;
 }

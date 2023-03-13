@@ -6,10 +6,17 @@ h1, h2, h3, h4, h5, h6{
     padding: 0;
 }
 
-p, a, li{
+p, a, li, button{
     font-family: 'Abel', sans-serif;
     font-size: clamp(1rem,2vw,0.8rem);
     margin: 0;
+}
+
+
+
+li, a {
+    text-transform: uppercase;
+    color: black;
 }
 
 p{
