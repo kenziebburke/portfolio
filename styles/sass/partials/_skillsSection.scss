@@ -58,6 +58,7 @@
     }
     .softUl{
         flex-basis: 80%;
+        flex-wrap: wrap;
         h3{
             text-transform: uppercase;
         }
@@ -88,3 +89,5 @@
         }
     }
 }
+
+// DONT FORGET TO ADD SKILLS BORDERS EVERYWHERE

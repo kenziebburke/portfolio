@@ -206,60 +206,69 @@
     <!-- PROJECTS SECTION -->
     <section id="projects" class="projects">
         <div class="wrapper flexContainer">
-            <h2>Featured Work</h2>
+            <article class="projectsTitle">
+                <h2>Featured Work</h2>
+                <p>HTML5, CSS3, GITHUB, VS Code, SASS, JavaScript, REACT, Firebase, RESTful APIS</p>
+            </article> 
             <div class="flexContainer featuredProjects">
+                <div class="comfortJournal">
                     <a href="https://comfortjournal.netlify.app/" target="_blank">
                         <span class="sr-only">link to comfort journal opens in new tab</span>
                         <figure>
                             <img src="./assets/comfortjournal.jpg" alt="Rendering of a screen grab from Comfort Journal webpage, on the left is a tree and on the right title comfort journal with date and squiggle lines">
                         </figure>
                     </a>
-                <div class="flexContainer">
-                    <a href="https://comfortjournal.netlify.app/" target="_blank">
-                        <span class="sr-only">link to comfort journal opens in new tab</span>
-                        Comfort Journal</a>
-                    <button>
-                        <i class="fa fa-angle-down" aria-hidden="true"></i>
-                    </button>
-                    <p>2023</p>
+                    <div class="flexContainer projectInfo">
+                        <div class="projectExpand">
+                            <a href="https://comfortjournal.netlify.app/" target="_blank">
+                                <span class="sr-only">link to comfort journal opens in new tab</span>
+                                Comfort Journal</a>
+                            <button>
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                        <p>2023</p>
+                    </div>
+                    <aside id="JournalDD" class="dropDown">
+                        <p class="sr-only">drop down menu with information pertaining to Comfort Journal.</p>
+                        <div class="flexContainer">
+                            <p class="number">01</p>
+                            <p>Comfort Journal was a collaborative project.  My partner and I designed a live journaling system using HTML, SCSS, and JavaScript, with realtime data storage on Firebase. The system was designed to provide a user-friendly and engaging experience, with each entry automatically timestamped with the date. To inspire users, we implemented a feature that randomly populates quotes on page load and an image carousel to spark creativity. Using Git collaboration and peer programming techniques, we were able to work together seamlessly, allowing for efficient and effective development.</p>
+                        </div>
+                        <div class="flexContainer">
+                            <button><a href="https://comfortjournal.netlify.app/" target="_blank"> 
+                                <span class="sr-only">link to comfort journal opens in new tab</span>
+                                Live</a>
+                            </button>
+                            <button><a href="https://github.com/paigethai/Project02ComfortJournal/branches" target="_blank">
+                                <span class="sr-only">link to comfort journal opens in new tab</span>
+                                Repo</a>
+                            </button>
+                        </div>
+                    </aside>
                 </div>
-                <aside id="JournalDD">
-                    <p class="sr-only">drop down menu with information pertaining to Comfort Journal.</p>
-                    <div class="flexContainer">
-                        <p>01</p>
-                        <p>Comfort Journal was a collaborative project.  My partner and I designed a live journaling system using HTML, SCSS, and JavaScript, with realtime data storage on Firebase. The system was designed to provide a user-friendly and engaging experience, with each entry automatically timestamped with the date. To inspire users, we implemented a feature that randomly populates quotes on page load and an image carousel to spark creativity. Using Git collaboration and peer programming techniques, we were able to work together seamlessly, allowing for efficient and effective development.</p>
-                    </div>
-                    <div class="flexContainer">
-                        <button><a href="https://comfortjournal.netlify.app/" target="_blank"> 
-                            <span class="sr-only">link to comfort journal opens in new tab</span>
-                            Live</a>
-                        </button>
-                        <button><a href="https://github.com/paigethai/Project02ComfortJournal/branches" target="_blank">
-                            <span class="sr-only">link to comfort journal opens in new tab</span>
-                            Repo</a>
-                        </button>
-                    </div>
-                </aside>
                 <div class="flexContainer bottomProjects">
-                    <div class="flexContainer shoeKloset">
+                    <div class="shoeKloset">
                         <a href="https://devkenziebbprojectone.netlify.app/" target="_blank">
                             <span class="sr-only">link to shoe kloset opens in new tab</span>
                             <figure>
                                 <img src="./assets/shoekloset.jpg" alt="Rendering of a screen grab from Shoe Kloset webpage, on the left is the title of shoe kloset and text find something new and on the right is legs wearing sneakers">
                             </figure>
                         </a>
-                        <div class="flexContainer">
-                            <a href="https://devkenziebbprojectone.netlify.app/" target="_blank">
-                                <span class="sr-only">link to shoe kloset opens in new tab</span> Shoe Kloset </a>
-                            <button>
-                                <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            </button>
+                        <div class="flexContainer projectInfo">
+                            <div class="projectExpand">
+                                <a href="https://devkenziebbprojectone.netlify.app/" target="_blank">
+                                    <span class="sr-only">link to shoe kloset opens in new tab</span> Shoe Kloset </a>
+                                <button>
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                            </div>
                             <p>2023</p>
                         </div>
-                        <aside id="klosetDD">
+                        <aside id="klosetDD" class="dropDown">
                             <p class="sr-only">drop down menu with information pertaining to Shoe Kloset.</p>
                             <div class="flexContainer">
-                                <p>02</p>
+                                <p class="number">02</p>
                                 <p>Shoe Kloset is a conversion of a  PSD file and converted it into a live website using HTML, SCSS, and JavaScript. The website was designed to be both accessible and responsive, and I made sure to adhere to best practices for both. I followed the DRY code principle and used SCSS to write modular and reusable CSS components. Finally, I used JavaScript to add interactivity to the website. The end result was a website that not only looked great and functioned flawlessly, but also provided a cohesive user interface experience.
                                 </p>
                             </div>
@@ -276,22 +285,24 @@
                             </div>
                         </aside>
                     </div>
-                    <div class="flexContainer arora">
+                    <div class="arora">
                         <figure>
                             <img src="./assets/arora.jpg" alt="Rendering of a screen grab from Arora webpage, on the left is the title of Arora and on the right is a woman wearing a large chain">
                         </figure>
-                        <div class="flexContainer">
-                            <!-- link to arora -->
-                            <a href="">Arora</a>
-                            <button>
-                                <i class="fa fa-angle-down" aria-hidden="true"></i>
-                            </button>
+                        <div class="flexContainer projectInfo">
+                            <div class="projectExpand">
+                                <!-- link to arora -->
+                                <a href="">Arora</a>
+                                <button>
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                </button>
+                            </div>
                             <p>2023</p>
                         </div> 
-                        <aside id="aroraDD">
+                        <aside id="aroraDD" class="dropDown">
                             <p class="sr-only">drop down menu with information pertaining to Arora.</p>
                             <div class="flexContainer">
-                                <p>03</p>
+                                <p class="number">03</p>
                                 <p>Arora is a project where I converted a PSD file into a fully accessible and responsive website using HTML and CSS. In addition to ensuring the website's design accurately matched the PSD file, I made sure that the website was built with accessibility in mind.  I also implemented responsive design techniques, allowing the website to adapt to different screen sizes and devices. To make sure the code was easy to maintain and update, I followed the DRY principle, eliminating redundant code and organizing the CSS using modular and reusable components.</p>
                             </div>
                             <div class="flexContainer">

@@ -599,6 +599,61 @@ input, label, textarea {
           animation: border_anim 3s linear forwards;
 }
 
+.projects {
+  margin: 80px 0;
+}
+
+.projectsTitle {
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+  margin-right: 5%;
+  height: 100%;
+  z-index: 10;
+  position: sticky;
+  top: 0;
+}
+.projectsTitle h2 {
+  font-size: clamp(3rem, 2vw, 2rem);
+  padding-bottom: 10px;
+}
+.projectsTitle p {
+  width: 70%;
+}
+
+.featuredProjects {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+.featuredProjects img {
+  border-radius: 10px;
+}
+.featuredProjects .projectInfo {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.featuredProjects .projectInfo .projectExpand button {
+  background-color: inherit;
+  border: none;
+}
+.featuredProjects .projectInfo .projectExpand button .fa {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.featuredProjects .dropDown .number {
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.arora figure img {
+  width: 95.5%;
+}
+
 @media (max-width: 950px) {
   .uploadedEntries {
     height: 59rem;

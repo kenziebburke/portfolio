@@ -1,0 +1,58 @@
+@use './mixins' as *;
+
+// PROJECTS SECTION
+.projects{
+    margin: 80px 0;
+}
+
+.projectsTitle{
+    flex-basis: 35%;
+    margin-right: 5%;
+    height: 100%;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    h2{
+        font-size: clamp(3rem,2vw,2rem);
+        padding-bottom: 10px;
+    }
+    p{
+        width: 70%;
+    }
+}
+
+.featuredProjects{
+    flex-direction: column;
+    flex-basis: 60%;
+    img{
+        border-radius: 10px;
+    }
+    .projectInfo{
+        justify-content: space-between;
+        width: 100%;
+        .projectExpand{
+            button{
+                background-color: inherit;
+                border: none;
+                .fa{
+                    font-size: 1.3rem;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .dropDown {
+        .number{
+            border: 1px solid black;
+            border-radius: 50%;
+        }
+    }
+}
+
+.arora{
+    figure{
+        img{
+            width: 95.5%;
+        }
+    }
+}
