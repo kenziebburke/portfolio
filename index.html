@@ -20,14 +20,352 @@
 
     <title>Kenzie Burke</title>
 </head>
-<!-- GO BACK AND CHANGE ALL THE LOGOS TO SVG SPRITE DO THE RESEARCH!! ALSO ASK IN HELP CUE -->
-<!-- SEE IF YOU CAN CHANGE OUT THE SURROUNDING TAGS FOR LINKS TO GH ETC TO ADDRESS? -->
-
-<!-- add container for icons -->
 <body>
-    <!-- HEADER -->
-    <header>
-        <div class="headerNav wrapper">
+<!-- HEADER -->
+<header>
+    <div class="headerNav wrapper">
+        <!-- LOGO -->
+        <div class="logo">
+            <figure>
+                <img src="./assets/logo.png" alt="logo with multiple box outlines the overlap one another">
+            </figure>
+            <p>KB</p>
+        </div>
+        <!-- NAVIGATION MENU -->
+        <nav id="navMenu" class="navMenu" aria-label="Navigation Menu">
+            <!-- nav UL -->
+            <ul class="navFlex">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li>
+                    <button data-hover="Let's talk">
+                        <a href="#contact">
+                                <div class="buttonInnerText">
+                                    Let's talk
+                                </div>
+                        </a>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <ul class="socialsLinks flexContainer">
+            <li class="circle">
+                <a href="https://github.com/kenziebburke" target="_blank">
+                    GH 
+                    <span class="sr-only">link to github opens in new tab</span>
+                </a>
+            </li>
+            <li class="circle">
+                <a href="https://www.linkedin.com/in/kenzieburke/ " target="_blank">
+                    LI
+                    <span class="sr-only">link to linkedin opens in new tab</span>
+                </a>
+            </li>
+            <li class="circle">
+                <a href="https://calendly.com/kenzieburkecodes" target="_blank">
+                    C
+                    <span class="sr-only">link to calendly opens in new tab</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="wrapper flexContainer hero">
+        <!-- HEADER TITLE -->
+        <article class="flexContainer headerTitle">
+            <h1>Kenzie Burke</h1>
+            <p>Web Developer & Graphic Designer</p>
+            <figure>
+                <!-- add alt text -->
+                <img src="./assets/diamond.png" alt="">
+            </figure>
+        </article><!-- .end of headerTitle -->
+        <!-- HEADER IMG -->
+        <figure>
+            <img src="./assets/headshot.jpg" alt="Black and white portrait of a girl with short blond hair smiling">
+        </figure>
+    </div> <!-- .end of hero -->
+</header>
+
+<main>
+    <!-- SKILLS SECTION -->
+    <section class="skills">
+        <div class="wrapper">
+            <!-- TECH SKILLS -->
+            <div class="flexContainer tech">
+                <p class="techStack">Tech Stack</p>
+                <ul class="techSkills flexContainer">
+                    <li>
+                        <figure>
+                            <img src="./assets/icons/icons8-html-50.svg" alt="HTML icon">
+                        </figure>
+                        <p>HTML 5</p>
+                    </li>
+                    <li>
+                        <figure class="skillsIcon">
+                            <img src="./assets/icons/icons8-css-50.svg" alt="CSS icon">
+                        </figure>
+                        <p>CSS3</p>
+                    </li>
+                    <li>
+                        <figure class="skillsIcon">
+                            <img src="./assets/icons/icons8-git-50.svg" alt="Github icon">
+                        </figure>
+                        <p>Github</p>
+                    </li>
+                    <li>
+                        <figure class="skillsIcon">
+                            <img src="./assets/icons/icons8-code-50.svg" alt="Code icon">
+                        </figure>
+                        <p>Vs Code</p>
+                    </li>
+                    <li>
+                        <figure class="skillsIcon">
+                            <img src="./assets/icons/icons8-sass-avatar-50.svg" alt="SASS icon">
+                        </figure>
+                        <p>SASS</p>
+                    </li>
+                    <li>
+                        <figure class="skillsIcon">
+                            <img src="./assets/icons/icons8-js-50.svg" alt="Javascript icon">
+                        </figure>
+                        <p>Javascript</p>
+                    </li>
+                    <li>
+                        <figure class="skillsIcon">
+                            <img src="./assets/icons/icons8-react-50.svg" alt="React icon">
+                        </figure>
+                        <p>React</p>
+                    </li>
+                    <li>
+                        <figure class="skillsIcon">
+                            <img src="./assets/icons/icons8-firebase-a-google's-mobile-platform-that-helps-you-quickly-develop-high-quality-apps-50.svg" alt="Firebase icon">
+                        </figure>
+                        <p>Firebase</p>
+                    </li>
+                    <li>
+                        <figure class="skillsIcon">
+                            <img src="./assets/icons/icons8-rest-api-50.svg" alt="RESTful API icon">
+                        </figure>
+                        <p>Restful APIs</p>
+                    </li>
+                </ul>
+            </div><!-- end of tech .flexContainer -->
+
+            <!-- SOFT SKILLS -->
+            <div class="flexContainer soft">
+                <p class="softSkillsP">Soft skills</p>
+                <ul class="flexContainer softUl">
+                    <li class="flexContainer top">
+                        <figure class="softSkills">
+                            <!-- add alt text -->
+                            <img src="./assets/icons/peer.svg" alt="">
+                        </figure>
+
+                        <article class="peer">
+                            <h3>Peer programming</h3>
+                            <p>Git hub, communication, collaboration.</p>
+                        </article>
+                    </li>
+                    <li class="flexContainer top">
+                        <figure class="softSkills triangles">
+                            <!-- add alt text -->
+                            <img src="./assets/icons/design.svg" alt="">
+                        </figure>
+
+                        <article>
+                            <h3>Design</h3>
+                            <p>Illistrator, Photoshop, Premier Pro, Animate Procreate, Rhino, Grasshopper.</p>
+                        </article>
+                    </li>
+                    <li class="flexContainer">
+                        <figure class="softSkills">
+                            <!-- add alt text -->
+                            <img src="./assets/icons/accessibility.svg" alt="">
+                        </figure>
+
+                        <article class="accessibility">
+                            <h3>Accessible design</h3>
+                            <p>WCAG, best practices, inclusivity forward. </p>
+                        </article>
+                    </li>
+                    <li class="flexContainer">
+                        <figure class="softSkills">
+                            <!-- add alt text -->
+                            <img src="./assets/icons/scope.svg" alt="">
+                        </figure>
+
+                        <article>
+                            <h3>Scope management</h3>
+                            <p>MVP maintenance, stretch goal planning, time management.</p>
+                        </article>
+                    </li>
+                </ul>
+            </div><!-- end of soft .flexContainer -->
+        </div><!-- end of .wrapper -->
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects">
+        <div class="wrapper flexContainer">
+            <h2>Featured Work</h2>
+            <div class="flexContainer featuredProjects">
+                <figure>
+                    <img src="./assets/comfortjournal.jpg" alt="Rendering of a screen grab from Comfort Journal webpage, on the left is a tree and on the right title comfort journal with date and squiggle lines">
+                </figure>
+                <div class="flexContainer">
+                    <!-- link project -->
+                    <a href="">Comfort Journal</a>
+                    <button>
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </button>
+                    <p>2023</p>
+                </div>
+                <aside id="JournalDD">
+                    <p class="sr-only">drop down menu with information pertaining to Comfort Journal.</p>
+                    <div class="flexContainer">
+                        <p>01</p>
+                        <!-- insert text pertaining to project here -->
+                        <p>Comfort Journal was a collaborative project.  My partner and I designed a live journaling system using HTML, SCSS, and JavaScript, with realtime data storage on Firebase. The system was designed to provide a user-friendly and engaging experience, with each entry automatically timestamped with the date. To inspire users, we implemented a feature that randomly populates quotes on page load and an image carousel to spark creativity. Using Git collaboration and peer programming techniques, we were able to work together seamlessly, allowing for efficient and effective development.</p>
+                    </div>
+                    <div class="flexContainer">
+                        <!-- link to both -->
+                        <button><a href="">Repo</a></button>
+                        <button><a href="">Live</a></button>
+                    </div>
+                </aside>
+                <div class="flexContainer bottomProjects">
+                    <div class="flexContainer shoeKloset">
+                        <figure>
+                            <img src="./assets/shoekloset.jpg" alt="Rendering of a screen grab from Shoe Kloset webpage, on the left is the title of shoe kloset and text find something new and on the right is legs wearing sneakers">
+                        </figure>
+                        <div class="flexContainer">
+                            <!-- link live project -->
+                            <a href="">Shoe Kloset</a>
+                            <button>
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </button>
+                            <p>2023</p>
+                        </div>
+                        <aside id="klosetDD">
+                            <p class="sr-only">drop down menu with information pertaining to Shoe Kloset.</p>
+                            <div class="flexContainer">
+                                <p>02</p>
+                                <p>Shoe Kloset is a conversion of a  PSD file and converted it into a live website using HTML, SCSS, and JavaScript. The website was designed to be both accessible and responsive, and I made sure to adhere to best practices for both. I followed the DRY code principle and used SCSS to write modular and reusable CSS components. Finally, I used JavaScript to add interactivity to the website. The end result was a website that not only looked great and functioned flawlessly, but also provided a cohesive user interface experience.
+                                </p>
+                            </div>
+                            <div class="flexContainer">
+                                <!-- link to both -->
+                                <button><a href="">Repo</a></button>
+                                <button><a href="">Live</a></button>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="flexContainer arora">
+                        <figure>
+                            <img src="./assets/arora.jpg" alt="Rendering of a screen grab from Arora webpage, on the left is the title of Arora and on the right is a woman wearing a large chain">
+                        </figure>
+                        <div class="flexContainer">
+                            <!-- link arora project -->
+                            <a href="">Arora</a>
+                            <button>
+                                <i class="fa fa-angle-down" aria-hidden="true"></i>
+                            </button>
+                            <p>2023</p>
+                        </div> 
+                        <aside id="aroraDD">
+                            <p class="sr-only">drop down menu with information pertaining to Arora.</p>
+                            <div class="flexContainer">
+                                <p>03</p>
+                                <p>Arora is a project where I converted a PSD file into a fully accessible and responsive website using HTML and CSS. In addition to ensuring the website's design accurately matched the PSD file, I made sure that the website was built with accessibility in mind.  I also implemented responsive design techniques, allowing the website to adapt to different screen sizes and devices. To make sure the code was easy to maintain and update, I followed the DRY principle, eliminating redundant code and organizing the CSS using modular and reusable components.</p>
+                            </div>
+                            <div class="flexContainer">
+                                <!-- link to both -->
+                                <button><a href="">Repo</a></button>
+                                <button><a href="">Live</a></button>
+                            </div>
+                        </aside>
+                    </div><!-- end of flexContainer arora -->
+                </div><!-- end of flexContainer  bottomProjects-->
+            </div> <!-- end of flexContainer featuredProjects -->
+        </div><!-- end of wrapper -->
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <div class="wrapper flexContainer">
+            <div class="flexContainer contactTitle">
+                <p>Contact</p>
+                <h2>Creating together.</h2>
+                <p>Find me on</p>
+                <ul>
+                    <li class="circle">
+                        <a href="https://github.com/kenziebburke">GH</a>
+                    </li>
+                    <li class="circle">
+                        <a href="https://www.linkedin.com/in/kenzieburke/">LI</a>
+                    </li>
+                    <li class="circle">
+                        <a href="https://calendly.com/kenzieburkecodes">C</a>
+                    </li>
+                </ul>
+                <button><a href="https://www.canva.com/design/DAFa36Opw6s/ITSbmY6g1R7UTx0TdzJsig/view?utm_content=DAFa36Opw6s&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">Resume</a></button>
+            </div>
+            <form action="#" method="#" class="contactForm" name="contactForm">
+                <!-- name input -->
+                <label for="userName" class="sr-only">Name</label>
+                <input type="text" id="userName" name="userName" placeholder="Your Name"
+                required="true">
+
+                <!-- email input -->
+                <label for="userEmail" class="sr-only">Email</label>
+                <input type="text" id="userEmail" name="userName" placeholder="Your Email" required="true">
+
+                <!-- message input -->
+                <label for="message">Your Message</label>
+                <textarea name="message" id="message" required="true" minlength="5"></textarea>
+
+                <button type="submit">Send message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="wrapper">
+            <h2>About</h2>
+            <div class="flexContainer">
+                <figure>
+                    <!-- add alt text -->
+                    <img src="./assets/studio.jpg" alt="">
+                </figure>
+                <div class="flexContainer">
+                    <article class="flexContainer">
+                        <p>01</p>
+                        <h3>Vision</h3>
+                        <p>Committed to promoting accessibility in web development, with a vision of a future where all users have equal access to online information and services. Continuously seeking to learn and integrate new technologies and techniques that improve accessibility for users with disabilities and diverse needs.</p>
+                    </article>
+                    <article class="flexContainer">
+                        <p>02</p>
+                        <h3>Innovation</h3>
+                        <p>Passionate about innovation in web development, with a track record of staying ahead of the curve on emerging technologies and trends. Skilled in leveraging cutting-edge tools and frameworks to develop dynamic, high-performing websites and applications that push the boundaries of what's possible on the web.</p>
+                    </article>
+                    <article class="flexContainer">
+                        <p>03</p>
+                        <h3>Connection</h3>
+                        <p>Valuing meaningful connections with colleagues, with a proven ability to build positive, collaborative relationships that foster a supportive and productive work environment. Skilled in effective communication and active listening, with an innate ability to understand and empathize with diverse perspectives and experiences.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER SECTION -->
+<footer>
+    <div class="flexContainer wrapper">
+        <div class="flexContainer footerLeft">
             <!-- LOGO -->
             <div class="logo">
                 <figure>
@@ -35,334 +373,28 @@
                 </figure>
                 <p>KB</p>
             </div>
-            <!-- NAVIGATION MENU -->
-            <nav id="navMenu" class="navMenu" aria-label="Navigation Menu">
-                <!-- nav UL -->
-                <ul class="navFlex">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li>
-                        <button data-hover="Let's talk">
-                            <a href="#contact">
-                                    <div class="buttonInnerText">
-                                        Let's talk
-                                    </div>
-                            </a>
-                        </button>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="socialsLinks flexContainer">
-                <li class="circle">
-                    <a href="https://github.com/kenziebburke" target="_blank">
-                        GH 
-                        <span class="sr-only">link to github opens in new tab</span>
-                    </a>
-                </li>
-                <li class="circle">
-                    <a href="https://www.linkedin.com/in/kenzieburke/ " target="_blank">
-                        LI
-                        <span class="sr-only">link to linkedin opens in new tab</span>
-                    </a>
-                </li>
-                <li class="circle">
-                    <a href="https://calendly.com/kenzieburkecodes" target="_blank">
-                        C
-                        <span class="sr-only">link to calendly opens in new tab</span>
-                    </a>
-                </li>
+            <p>Toronto, Ontario</p>
+            <ul>
+                <li class="circle"><a href="https://github.com/kenziebburke">GH</a></li>
+                <li class="circle"><a href="https://www.linkedin.com/in/kenzieburke/">LI</a></li>
+                <li class="circle"><a href="https://calendly.com/kenzieburkecodes">C</a></li>
             </ul>
         </div>
+        <!-- NAVIGATION MENU -->
+        <nav id="navMenu" class="navMenu" aria-label="Navigation Menu">
+            <!-- nav UL -->
+            <ul class="navFlex">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><button><a href="#contact">Let's Talk</a></button></li>
+            </ul>
+        </nav>
+    </div>
+</footer>
 
-        <div class="wrapper flexContainer hero">
-            <!-- HEADER TITLE -->
-            <article class="flexContainer headerTitle">
-                <h1>Kenzie Burke</h1>
-                <p>Web Developer & Graphic Designer</p>
-                <figure>
-                    <!-- add alt text -->
-                    <img src="./assets/diamond.png" alt="">
-                </figure>
-            </article><!-- .end of headerTitle -->
-            <!-- HEADER IMG -->
-            <figure>
-                <img src="./assets/headshot.jpg" alt="Black and white portrait of a girl with short blond hair smiling">
-            </figure>
-        </div> <!-- .end of hero -->
-    </header>
-
-    <main>
-        <!-- SKILLS SECTION -->
-        <section class="skills">
-            <div class="wrapper">
-                <!-- TECH SKILLS -->
-                <div class="flexContainer">
-                    <p>Tech Stack</p>
-                    <ul class="tech">
-                        <li class="flexContainer">
-                            <img src="./assets/icons/icons8-html-50.svg" alt="HTML icon">
-                            <p>HTML 5</p>
-                        </li>
-                        <li class="flexContainer">
-                            <img src="./assets/icons/icons8-css-50.svg" alt="CSS icon">
-                            <p>CSS3</p>
-                        </li>
-                        <li class="flexContainer">
-                            <img src="./assets/icons/icons8-git-50.svg" alt="Github icon">
-                            <p>Github</p>
-                        </li>
-                        <li class="flexContainer">
-                            <img src="./assets/icons/icons8-code-50.svg" alt="Code icon">
-                            <p>Vs Code</p>
-                        </li>
-                        <li class="flexContainer">
-                            <img src="./assets/icons/icons8-sass-avatar-50.svg" alt="SASS icon">
-                            <p>SASS</p>
-                        </li>
-                        <li class="flexContainer">
-                            <img src="./assets/icons/icons8-js-50.svg" alt="Javascript icon">
-                            <p>Javascript</p>
-                        </li>
-                        <li class="flexContainer">
-                            <img src="./assets/icons/icons8-react-50.svg" alt="React icon">
-                            <p>React</p>
-                        </li>
-                        <li class="flexContainer">
-                            <img src="./assets/icons/icons8-firebase-a-google's-mobile-platform-that-helps-you-quickly-develop-high-quality-apps-50.svg" alt="Firebase icon">
-                            <p>Firebase</p>
-                        </li>
-                        <li class="flexContainer">
-                            <img src="./assets/icons/icons8-rest-api-50.svg" alt="RESTful API icon">
-                            <p>Restful APIs</p>
-                        </li>
-                    </ul>
-                </div><!-- end of tech .flexContainer -->
-
-                <!-- SOFT SKILLS -->
-                <div class="flexContainer">
-                    <p>Soft skills</p>
-                    <ul class="soft">
-                        <li class="flexContainer">
-                            <!-- add alt text -->
-                            <img src="./assets/icons/peer.svg" alt="">
-                            <article class="flexContainer">
-                                <h3>Peer programming</h3>
-                                <p>Git hub, communication, collaboration.</p>
-                            </article>
-                        </li>
-                        <li class="flexContainer">
-                            <!-- add alt text -->
-                            <img src="./assets/icons/design.svg" alt="">
-                            <article class="flexContainer">
-                                <h3>Design</h3>
-                                <p>Illistrator, Photoshop, Premier Pro, Animate Procreate, Rhino, Grasshopper.</p>
-                            </article>
-                        </li>
-                        <li class="flexContainer">
-                            <!-- add alt text -->
-                            <img src="./assets/icons/accessibility.svg" alt="">
-                            <article class="flexContainer">
-                                <h3>Accessible design</h3>
-                                <p>WCAG, best practices, inclusivity forward. </p>
-                            </article>
-                        </li>
-                        <li class="flexContainer">
-                            <!-- add alt text -->
-                            <img src="./assets/icons/scope.svg" alt="">
-                            <article class="flexContainer">
-                                <h3>Scope management</h3>
-                                <p>MVP maintenance, stretch goal planning, time management.</p>
-                            </article>
-                        </li>
-                    </ul>
-                </div><!-- end of soft .flexContainer -->
-            </div><!-- end of .wrapper -->
-        </section>
-
-        <!-- PROJECTS SECTION -->
-        <section id="projects" class="projects">
-            <div class="wrapper flexContainer">
-                <h2>Featured Work</h2>
-                <div class="flexContainer featuredProjects">
-                    <figure>
-                        <img src="./assets/comfortjournal.jpg" alt="Rendering of a screen grab from Comfort Journal webpage, on the left is a tree and on the right title comfort journal with date and squiggle lines">
-                    </figure>
-                    <div class="flexContainer">
-                        <!-- link project -->
-                        <a href="">Comfort Journal</a>
-                        <button>
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                        </button>
-                        <p>2023</p>
-                    </div>
-                    <aside id="JournalDD">
-                        <p class="sr-only">drop down menu with information pertaining to Comfort Journal.</p>
-                        <div class="flexContainer">
-                            <p>01</p>
-                            <!-- insert text pertaining to project here -->
-                            <p>Comfort Journal was a collaborative project.  My partner and I designed a live journaling system using HTML, SCSS, and JavaScript, with realtime data storage on Firebase. The system was designed to provide a user-friendly and engaging experience, with each entry automatically timestamped with the date. To inspire users, we implemented a feature that randomly populates quotes on page load and an image carousel to spark creativity. Using Git collaboration and peer programming techniques, we were able to work together seamlessly, allowing for efficient and effective development.</p>
-                        </div>
-                        <div class="flexContainer">
-                            <!-- link to both -->
-                            <button><a href="">Repo</a></button>
-                            <button><a href="">Live</a></button>
-                        </div>
-                    </aside>
-                    <div class="flexContainer bottomProjects">
-                        <div class="flexContainer shoeKloset">
-                            <figure>
-                                <img src="./assets/shoekloset.jpg" alt="Rendering of a screen grab from Shoe Kloset webpage, on the left is the title of shoe kloset and text find something new and on the right is legs wearing sneakers">
-                            </figure>
-                            <div class="flexContainer">
-                                <!-- link live project -->
-                                <a href="">Shoe Kloset</a>
-                                <button>
-                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                </button>
-                                <p>2023</p>
-                            </div>
-                            <aside id="klosetDD">
-                                <p class="sr-only">drop down menu with information pertaining to Shoe Kloset.</p>
-                                <div class="flexContainer">
-                                    <p>02</p>
-                                    <p>Shoe Kloset is a conversion of a  PSD file and converted it into a live website using HTML, SCSS, and JavaScript. The website was designed to be both accessible and responsive, and I made sure to adhere to best practices for both. I followed the DRY code principle and used SCSS to write modular and reusable CSS components. Finally, I used JavaScript to add interactivity to the website. The end result was a website that not only looked great and functioned flawlessly, but also provided a cohesive user interface experience.
-                                    </p>
-                                </div>
-                                <div class="flexContainer">
-                                    <!-- link to both -->
-                                    <button><a href="">Repo</a></button>
-                                    <button><a href="">Live</a></button>
-                                </div>
-                            </aside>
-                        </div>
-                        <div class="flexContainer arora">
-                            <figure>
-                                <img src="./assets/arora.jpg" alt="Rendering of a screen grab from Arora webpage, on the left is the title of Arora and on the right is a woman wearing a large chain">
-                            </figure>
-                            <div class="flexContainer">
-                                <!-- link arora project -->
-                                <a href="">Arora</a>
-                                <button>
-                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                </button>
-                                <p>2023</p>
-                            </div> 
-                            <aside id="aroraDD">
-                                <p class="sr-only">drop down menu with information pertaining to Arora.</p>
-                                <div class="flexContainer">
-                                    <p>03</p>
-                                    <p>Arora is a project where I converted a PSD file into a fully accessible and responsive website using HTML and CSS. In addition to ensuring the website's design accurately matched the PSD file, I made sure that the website was built with accessibility in mind.  I also implemented responsive design techniques, allowing the website to adapt to different screen sizes and devices. To make sure the code was easy to maintain and update, I followed the DRY principle, eliminating redundant code and organizing the CSS using modular and reusable components.</p>
-                                </div>
-                                <div class="flexContainer">
-                                    <!-- link to both -->
-                                    <button><a href="">Repo</a></button>
-                                    <button><a href="">Live</a></button>
-                                </div>
-                            </aside>
-                        </div><!-- end of flexContainer arora -->
-                    </div><!-- end of flexContainer  bottomProjects-->
-                </div> <!-- end of flexContainer featuredProjects -->
-            </div><!-- end of wrapper -->
-        </section>
-
-        <!-- CONTACT SECTION -->
-        <section id="contact" class="contact">
-            <div class="wrapper flexContainer">
-                <div class="flexContainer contactTitle">
-                    <p>Contact</p>
-                    <h2>Creating together.</h2>
-                    <p>Find me on</p>
-                    <ul>
-                        <li class="circle"><a href="https://github.com/kenziebburke">GH</a></li>
-                        <li class="circle"><a href="https://www.linkedin.com/in/kenzieburke/">LI</a></li>
-                        <li class="circle"><a href="https://calendly.com/kenzieburkecodes">C</a></li>
-                    </ul>
-                    <button><a href="https://www.canva.com/design/DAFa36Opw6s/ITSbmY6g1R7UTx0TdzJsig/view?utm_content=DAFa36Opw6s&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">Resume</a></button>
-                </div>
-                <form action="#" method="#" class="contactForm" name="contactForm">
-                    <!-- name input -->
-                    <label for="userName" class="sr-only">Name</label>
-                    <input type="text" id="userName" name="userName" placeholder="Your Name"
-                    required="true">
-
-                    <!-- email input -->
-                    <label for="userEmail" class="sr-only">Email</label>
-                    <input type="text" id="userEmail" name="userName" placeholder="Your Email" required="true">
-
-                    <!-- message input -->
-                    <label for="message">Your Message</label>
-                    <textarea name="message" id="message" required="true" minlength="5"></textarea>
-
-                    <button type="submit">Send message</button>
-                </form>
-            </div>
-        </section>
-
-        <!-- ABOUT SECTION -->
-        <section id="about" class="about">
-            <div class="wrapper">
-                <h2>About</h2>
-                <div class="flexContainer">
-                    <figure>
-                        <!-- add alt text -->
-                        <img src="./assets/studio.jpg" alt="">
-                    </figure>
-                    <div class="flexContainer">
-                        <article class="flexContainer">
-                            <p>01</p>
-                            <h3>Vision</h3>
-                            <p>Committed to promoting accessibility in web development, with a vision of a future where all users have equal access to online information and services. Continuously seeking to learn and integrate new technologies and techniques that improve accessibility for users with disabilities and diverse needs.</p>
-                        </article>
-                        <article class="flexContainer">
-                            <p>02</p>
-                            <h3>Innovation</h3>
-                            <p>Passionate about innovation in web development, with a track record of staying ahead of the curve on emerging technologies and trends. Skilled in leveraging cutting-edge tools and frameworks to develop dynamic, high-performing websites and applications that push the boundaries of what's possible on the web.</p>
-                        </article>
-                        <article class="flexContainer">
-                            <p>03</p>
-                            <h3>Connection</h3>
-                            <p>Valuing meaningful connections with colleagues, with a proven ability to build positive, collaborative relationships that foster a supportive and productive work environment. Skilled in effective communication and active listening, with an innate ability to understand and empathize with diverse perspectives and experiences.</p>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- FOOTER SECTION -->
-    <footer>
-        <div class="flexContainer wrapper">
-            <div class="flexContainer footerLeft">
-                <!-- LOGO -->
-                <div class="logo">
-                    <figure>
-                        <img src="./assets/logo.png" alt="logo with multiple box outlines the overlap one another">
-                    </figure>
-                    <p>KB</p>
-                </div>
-                <p>Toronto, Ontario</p>
-                <ul>
-                    <li class="circle"><a href="https://github.com/kenziebburke">GH</a></li>
-                    <li class="circle"><a href="https://www.linkedin.com/in/kenzieburke/">LI</a></li>
-                    <li class="circle"><a href="https://calendly.com/kenzieburkecodes">C</a></li>
-                </ul>
-            </div>
-            <!-- NAVIGATION MENU -->
-            <nav id="navMenu" class="navMenu" aria-label="Navigation Menu">
-                <!-- nav UL -->
-                <ul class="navFlex">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><button><a href="#contact">Let's Talk</a></button></li>
-                </ul>
-            </nav>
-        </div>
-    </footer>
-
-    <!-- LINK TO JS FILE -->
-    <script type="module" src="/script.js"></script>
+<!-- LINK TO JS FILE -->
+<script type="module" src="/script.js"></script>
 
 </body>
 </html>

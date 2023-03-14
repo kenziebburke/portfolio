@@ -320,6 +320,7 @@ input, label, textarea {
   margin-top: -10px;
 }
 .headerNav .logo p {
+  margin-left: 10px;
   font-weight: bold;
 }
 .headerNav nav {
@@ -485,6 +486,109 @@ input, label, textarea {
 }
 
 .hero:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  width: 0;
+  border-bottom: solid 1px #000;
+  -webkit-animation: border_anim 3s linear forwards;
+          animation: border_anim 3s linear forwards;
+}
+
+.skills {
+  margin-top: 80px;
+}
+.skills .tech {
+  position: relative;
+}
+.skills .techStack {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  text-transform: uppercase;
+}
+.skills .techSkills {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+}
+.skills .techSkills p {
+  font-size: 0.6rem;
+}
+.skills figure {
+  height: 70px;
+  width: 70px;
+}
+
+.tech:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  width: 0;
+  border-bottom: solid 1px #000;
+  -webkit-animation: border_anim 3s linear forwards;
+          animation: border_anim 3s linear forwards;
+  bottom: -50px;
+}
+
+@keyframes border_anim {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.soft {
+  margin-top: 80px;
+  position: relative;
+}
+.soft .softSkillsP {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  padding-right: 5%;
+  text-transform: uppercase;
+}
+.soft .softUl {
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.soft .softUl h3 {
+  text-transform: uppercase;
+}
+.soft .softUl p {
+  text-transform: none;
+}
+.soft .softUl .softSkills {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  min-width: 85px;
+  padding-right: 10%;
+  text-transform: uppercase;
+}
+.soft .softUl .triangles {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+.soft .softUl .flexContainer {
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+}
+.soft .softUl .peer,
+.soft .softUl .accessibility {
+  margin-right: 5%;
+}
+.soft .softUl .top {
+  padding-bottom: 60px;
+}
+.soft .softUl .top:before {
   content: "";
   position: absolute;
   left: 0;

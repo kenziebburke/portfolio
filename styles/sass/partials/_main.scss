@@ -1,0 +1,91 @@
+@use './mixins' as *;
+
+
+// SKILLS SECTION
+// skills top
+.skills{
+    margin-top: 80px;
+    .tech{
+        position: relative;
+    }
+
+    .techStack
+    {
+        flex-basis: 25%;
+        text-transform: uppercase;
+        // DONT FORGET TO ADD BORDER ANIMATION HERE!
+    }
+
+    .techSkills{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-basis: 75%;
+        p{
+            font-size: 0.6rem;
+            // FIX POSITIONING ON THESE TITLES HERE 
+        }
+    }
+
+    figure{
+        height: 70px;
+        width: 70px;
+    }
+}
+
+.tech:before{
+    @include borderAnim;
+    bottom: -50px;
+}
+
+@keyframes border_anim {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 100%;
+	}
+}
+
+// skills bottom
+.soft{
+    margin-top: 80px;
+    position: relative;
+    .softSkillsP{
+        flex-basis: 25%;
+        padding-right: 5%;
+        text-transform: uppercase;
+        // DONT FORGET TO ADD BORDER ANIMATION HERE!
+    }
+    .softUl{
+        flex-basis: 80%;
+        flex-wrap: wrap;
+        h3{
+            text-transform: uppercase;
+        }
+        p{
+            text-transform: none;
+        }
+        .softSkills {
+            flex-basis: 40%;
+            min-width: 85px;
+            padding-right: 10%;
+            text-transform: uppercase;
+        }
+        .triangles{
+            flex-basis: 60%;
+        }
+        .flexContainer{
+            flex-basis: 49%;
+        }
+        .peer,
+        .accessibility{
+            margin-right: 5%;
+        }
+        .top{
+            padding-bottom: 60px;
+        }
+        .top:before{
+            @include borderAnim;
+        }
+    }
+}
