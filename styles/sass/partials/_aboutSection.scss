@@ -1,0 +1,31 @@
+@use './mixins' as *;
+
+// ABOUT SECTION
+
+.about{
+    h2{
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: clamp(3rem,2vw,2rem);
+        padding: 1rem 0;
+    }
+
+    h2::before{
+        @include borderAnim;
+        bottom: -20px;
+    }
+}
+
+.aboutContainer{
+    position: relative;
+    padding: 80px 0;
+    figure{
+        flex-basis: 45%;
+        padding-right: 5%;
+    }
+    .aboutText{
+        flex-basis: 50%;
+        flex-direction: column;
+    }
+}

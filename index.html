@@ -205,7 +205,7 @@
 
     <!-- PROJECTS SECTION -->
     <section id="projects" class="projects">
-        <div class="wrapper flexContainer">
+        <div class="wrapper flexContainer projectsContainer">
             <article class="projectsTitle">
                 <h2>Featured Work</h2>
                 <p>HTML5, CSS3, GITHUB, VS Code, SASS, JavaScript, REACT, Firebase, RESTful APIS</p>
@@ -225,24 +225,33 @@
                                 Comfort Journal</a>
                             <button>
                                 <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                <i class="fa fa-angle-up" aria-hidden="true"></i>
                             </button>
                         </div>
                         <p>2023</p>
                     </div>
-                    <aside id="JournalDD" class="dropDown">
+                    <aside id="journalDD" class="dropDown">
                         <p class="sr-only">drop down menu with information pertaining to Comfort Journal.</p>
-                        <div class="flexContainer">
+                        <div class="flexContainer textDD">
                             <p class="number">01</p>
                             <p>Comfort Journal was a collaborative project.  My partner and I designed a live journaling system using HTML, SCSS, and JavaScript, with realtime data storage on Firebase. The system was designed to provide a user-friendly and engaging experience, with each entry automatically timestamped with the date. To inspire users, we implemented a feature that randomly populates quotes on page load and an image carousel to spark creativity. Using Git collaboration and peer programming techniques, we were able to work together seamlessly, allowing for efficient and effective development.</p>
                         </div>
-                        <div class="flexContainer">
-                            <button><a href="https://comfortjournal.netlify.app/" target="_blank"> 
-                                <span class="sr-only">link to comfort journal opens in new tab</span>
-                                Live</a>
+                        <div class="flexContainer buttonDD">
+                            <button data-hover="Live" class="live"> 
+                                    <a href="https://comfortjournal.netlify.app/" target="_blank"> 
+                                        <span class="sr-only">link to comfort journal opens in new tab</span>
+                                        <div>
+                                            Live
+                                        </div>
+                                        </a>
                             </button>
-                            <button><a href="https://github.com/paigethai/Project02ComfortJournal/branches" target="_blank">
-                                <span class="sr-only">link to comfort journal opens in new tab</span>
-                                Repo</a>
+                            <button data-hover="Repo">
+                                    <a href="https://github.com/paigethai/Project02ComfortJournal/branches" target="_blank">
+                                        <span class="sr-only">link to comfort journal opens in new tab</span>
+                                        <div>
+                                            Repo
+                                        </div>
+                                        </a>
                             </button>
                         </div>
                     </aside>
@@ -261,26 +270,34 @@
                                     <span class="sr-only">link to shoe kloset opens in new tab</span> Shoe Kloset </a>
                                 <button>
                                     <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    <i class="fa fa-angle-up" aria-hidden="true"></i>
                                 </button>
                             </div>
                             <p>2023</p>
                         </div>
                         <aside id="klosetDD" class="dropDown">
                             <p class="sr-only">drop down menu with information pertaining to Shoe Kloset.</p>
-                            <div class="flexContainer">
+                            <div class="flexContainer textDD">
                                 <p class="number">02</p>
                                 <p>Shoe Kloset is a conversion of a  PSD file and converted it into a live website using HTML, SCSS, and JavaScript. The website was designed to be both accessible and responsive, and I made sure to adhere to best practices for both. I followed the DRY code principle and used SCSS to write modular and reusable CSS components. Finally, I used JavaScript to add interactivity to the website. The end result was a website that not only looked great and functioned flawlessly, but also provided a cohesive user interface experience.
                                 </p>
                             </div>
-                            <div class="flexContainer">
+                            <div class="flexContainer buttonDD">
                                 <!-- deploy main branch to site on netlify -->
-                                <button><a  href="https://devkenziebbprojectone.netlify.app/" target="_blank">
-                                    <span class="sr-only">link to shoe kloset opens in new tab</span>
-                                    Live</a>
+                                <button data-hover="Live" class="live"> 
+                                        <a href="https://devkenziebbprojectone.netlify.app/" target="_blank"> 
+                                            <span class="sr-only">link to shoe kloset opens in new tab</span>
+                                            <div>
+                                                Live
+                                            </div>
+                                        </a>
                                 </button>
-                                <button><a href="https://github.com/kenziebburke/kenzieBurkeProjectOne" target="_blank">
-                                    <span class="sr-only">link to shoe kloset opens in new tab</span>
-                                    Repo</a>
+                                <button data-hover="Repo" class="repo">
+                                        <a href="https://github.com/kenziebburke/kenzieBurkeProjectOne" target="_blank">
+                                            <span class="sr-only">link to shoe kloset opens in new tab</span>
+                                            <div>
+                                                Repo
+                                            </div></a>
                                 </button>
                             </div>
                         </aside>
@@ -295,20 +312,35 @@
                                 <a href="">Arora</a>
                                 <button>
                                     <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    <i class="fa fa-angle-up" aria-hidden="true"></i>
                                 </button>
                             </div>
                             <p>2023</p>
                         </div> 
                         <aside id="aroraDD" class="dropDown">
                             <p class="sr-only">drop down menu with information pertaining to Arora.</p>
-                            <div class="flexContainer">
+                            <div class="flexContainer textDD">
                                 <p class="number">03</p>
                                 <p>Arora is a project where I converted a PSD file into a fully accessible and responsive website using HTML and CSS. In addition to ensuring the website's design accurately matched the PSD file, I made sure that the website was built with accessibility in mind.  I also implemented responsive design techniques, allowing the website to adapt to different screen sizes and devices. To make sure the code was easy to maintain and update, I followed the DRY principle, eliminating redundant code and organizing the CSS using modular and reusable components.</p>
                             </div>
-                            <div class="flexContainer">
+                            <div class="flexContainer buttonDD">
                                 <!-- link arora project make repo also make netlify -->
-                                <button><a href="">Repo</a></button>
-                                <button><a href="">Live</a></button>
+                                <button data-hover="Live" class="live">
+                                        <a href="" target="_blank"> 
+                                            <span class="sr-only">link to arora opens in new tab</span>
+                                            <div>
+                                                Live
+                                            </div>
+                                        </a>
+                                </button>
+                                <button data-hover="Repo" class="repo">
+                                        <a href="" target="_blank">
+                                            <span class="sr-only">link to arora opens in new tab</span>
+                                            <div>
+                                                Repo
+                                            </div>
+                                        </a>
+                                </button>
                             </div>
                         </aside>
                     </div><!-- end of flexContainer arora -->
@@ -319,12 +351,12 @@
 
     <!-- CONTACT SECTION -->
     <section id="contact" class="contact">
-        <div class="wrapper flexContainer">
-            <div class="flexContainer contactTitle">
+        <div class="wrapper flexContainer contactContainer">
+            <div class="contactTitle">
                 <p>Contact</p>
                 <h2>Creating together.</h2>
                 <p>Find me on</p>
-                <ul>
+                <ul class="contactSocials">
                     <li class="circle">
                         <a href="https://github.com/kenziebburke">GH</a>
                     </li>
@@ -335,9 +367,16 @@
                         <a href="https://calendly.com/kenzieburkecodes">C</a>
                     </li>
                 </ul>
-                <button><a href="https://www.canva.com/design/DAFa36Opw6s/ITSbmY6g1R7UTx0TdzJsig/view?utm_content=DAFa36Opw6s&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">Resume</a></button>
+                <button data-hover="Resume" class="resume">
+                    <a href="//www.canva.com/design/DAFa36Opw6s/ITSbmY6g1R7UTx0TdzJsig/view?utm_content=DAFa36Opw6s&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">
+                        <span class="sr-only">link to resume opens in new tab</span>
+                        <div>
+                            Resume
+                        </div>
+                    </a>
+                </button>
             </div>
-            <form action="#" method="#" class="contactForm" name="contactForm">
+            <form action="#" method="#" class="contactForm flexContainer" name="contactForm">
                 <!-- name input -->
                 <label for="userName" class="sr-only">Name</label>
                 <input type="text" id="userName" name="userName" placeholder="Your Name"
@@ -351,7 +390,11 @@
                 <label for="message">Your Message</label>
                 <textarea name="message" id="message" required="true" minlength="5"></textarea>
 
-                <button type="submit">Send message</button>
+                <button data-hover="Submit" type="submit">
+                        <div>
+                            SUBMIT
+                        </div>
+                </button>
             </form>
         </div>
     </section>
@@ -360,26 +403,32 @@
     <section id="about" class="about">
         <div class="wrapper">
             <h2>About</h2>
-            <div class="flexContainer">
+            <div class="flexContainer aboutContainer">
                 <figure>
                     <!-- add alt text -->
                     <img src="./assets/studio.jpg" alt="">
                 </figure>
-                <div class="flexContainer">
-                    <article class="flexContainer">
-                        <p>01</p>
-                        <h3>Vision</h3>
-                        <p>Committed to promoting accessibility in web development, with a vision of a future where all users have equal access to online information and services. Continuously seeking to learn and integrate new technologies and techniques that improve accessibility for users with disabilities and diverse needs.</p>
+                <div class="flexContainer aboutText">
+                    <article>
+                        <div class="flexContainer">
+                            <p>01</p>
+                            <h3>Vision</h3>
+                        </div>
+                        <p>Committed to promoting accessibility in web development, with a vision of a future where all users have equal access to online information and services.</p>
                     </article>
-                    <article class="flexContainer">
-                        <p>02</p>
-                        <h3>Innovation</h3>
-                        <p>Passionate about innovation in web development, with a track record of staying ahead of the curve on emerging technologies and trends. Skilled in leveraging cutting-edge tools and frameworks to develop dynamic, high-performing websites and applications that push the boundaries of what's possible on the web.</p>
+                    <article>
+                        <div class="flexContainer">
+                            <p>02</p>
+                            <h3>Innovation</h3>
+                        </div>
+                        <p>Passionate about innovation in web development. Skilled in leveraging cutting-edge tools and frameworks to develop dynamic, high-performing websites and applications that push the boundaries of what's possible on the web.</p>
                     </article>
-                    <article class="flexContainer">
-                        <p>03</p>
-                        <h3>Connection</h3>
-                        <p>Valuing meaningful connections with colleagues, with a proven ability to build positive, collaborative relationships that foster a supportive and productive work environment. Skilled in effective communication and active listening, with an innate ability to understand and empathize with diverse perspectives and experiences.</p>
+                    <article>
+                        <div class="flexContainer">
+                            <p>03</p>
+                            <h3>Connection</h3>
+                        </div>
+                        <p>Valuing meaningful connections with colleagues, with a proven ability to build positive, collaborative relationships that foster a supportive and productive work environment. </p>
                     </article>
                 </div>
             </div>
@@ -412,7 +461,15 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><button><a href="#contact">Let's Talk</a></button></li>
+                <li>
+                    <button data-hover="Let's talk">
+                        <a href="#contact">
+                            <div class="buttonInnerText">
+                                Let's talk
+                            </div>
+                        </a>
+                    </button>
+                </li>
             </ul>
         </nav>
     </div>

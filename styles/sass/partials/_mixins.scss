@@ -21,7 +21,6 @@
 @mixin buttonAnim{
     content: attr(data-hover);
     position: absolute;
-    top: 5px; 
     left: 0;
     width: 100%;
     opacity: 0;

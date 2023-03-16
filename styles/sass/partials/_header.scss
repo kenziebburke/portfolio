@@ -28,38 +28,6 @@
         a{
             line-height: 32px;
         }
-        button{
-            @include button;
-        }
-        
-        button:hover,
-        button:focus{
-            cursor: pointer
-        }
-
-        /*button:before (attr data-hover)*/
-        button:hover:before,
-        button:focus:before{
-            opacity: 1; 
-            transform: 
-            translate(0,0);
-        }
-
-        button:before{
-            @include buttonAnim;
-        }
-
-        /*button div (button text before hover)*/
-        button:hover div,
-        button:focus div{
-            opacity: 0; 
-            transform: translate(100%,0)
-        }
-
-        button div{
-            transition: all .3s ease-in-out;
-            color: #fdfbf5;
-        }
     }
 
     .socialsLinks{
