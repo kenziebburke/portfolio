@@ -1,7 +1,6 @@
 @use './mixins' as *;
 
 // ABOUT SECTION
-
 .about{
     h2{
         position: relative;
@@ -19,13 +18,58 @@
 
 .aboutContainer{
     position: relative;
-    padding: 80px 0;
+    padding: 80px 0 40px 0;
+    flex-wrap: wrap;
     figure{
         flex-basis: 45%;
         padding-right: 5%;
+        min-width: 400px;
     }
-    .aboutText{
-        flex-basis: 50%;
-        flex-direction: column;
+    figure::before{
+        content: '';
+        position: absolute;
+        top:75px;
+        left: 450px;
+        width: 0;
+        border-right: solid 1px #000;
+        animation: border_anim_Down_C 3s linear forwards;
     }
+    
+    @keyframes border_anim_Down_C {
+        0%{
+            height: 0%;
+        }
+        100%{
+            height: 85%;
+        }
+    }
+}
+
+.aboutText{
+    flex-basis: 50%;
+    flex-direction: column;
+}
+
+.aboutTextContainer{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+.innovation{
+    margin-top: 10px;
+}
+
+.connection{
+    margin-top: 20px;
+}
+
+.aboutTextContainer::before{
+    @include borderAnim;
+    top: 10px;
+}
+
+.aboutContainer::before{
+    @include borderAnim;
+    bottom: -20px;
 }

@@ -28,6 +28,9 @@
         a{
             line-height: 32px;
         }
+        button{
+            padding: 2px 6px;
+        }
     }
 
     .socialsLinks{
@@ -53,7 +56,7 @@
 
 
 
-.headerNav:before{
+.headerNav::before{
     @include borderAnim;
 }
 
@@ -102,6 +105,6 @@
     }
 }
 
-.hero:before{
+.hero::before{
     @include borderAnim;
 }

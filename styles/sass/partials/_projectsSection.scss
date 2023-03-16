@@ -30,7 +30,17 @@
         width: 70%;
     }
 }
-//  dont forget to add BORDER RIGHT
+
+// .projectTitle::after{
+//     content: '';
+//     position: absolute;
+//     left: 0;
+//     bottom: -25px;
+//     width: 0;
+//     border-bottom: solid 1px #000;
+//     animation: border_anim_Down 3s linear forwards;
+// }
+
 
 .featuredProjects{
     flex-direction: column;
@@ -55,16 +65,6 @@
     .dropDown {
         .textDD{
             margin: 10px 0;
-        }
-        .number{
-            border: 1px solid black;
-            border-radius: 50%;
-            height: 32px;
-            width: 32px;
-            line-height: 25px;
-            text-align: center;
-            padding: 3px;
-            margin:5px 2% 0 0;
         }
         .buttonDD{
             justify-content: space-evenly;
