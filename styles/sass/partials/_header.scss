@@ -6,6 +6,7 @@
     justify-content: space-between;
     margin: 60px auto 40px auto;
     position: relative;
+
     .logo{
         display: flex;
         flex-basis: 45%;
@@ -17,9 +18,11 @@
             font-weight: bold;
         }
     }
+
     nav{
         flex-basis: 40%;
     }
+
     .navFlex{
         display: flex;
         justify-content: space-between;
@@ -31,6 +34,9 @@
         button{
             padding: 2px 6px;
         }
+    }
+    .navIcons{
+        display: none;
     }
 
     .socialsLinks{
@@ -89,11 +95,11 @@
         figure{
             height: 50px;
             width: 50px;
-            img{
-                transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
-                transform-style: preserve-3d;
-                opacity: 1;
-            }
+            // img{
+            //     transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+            //     transform-style: preserve-3d;
+            //     opacity: 1;
+            // }
         }
     }
     figure{

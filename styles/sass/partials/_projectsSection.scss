@@ -62,18 +62,59 @@
             }
         }
     }
-    .dropDown {
-        .textDD{
-            margin: 10px 0;
-        }
-        .buttonDD{
-            justify-content: space-evenly;
-            .live{
-                margin-right: 2%;
-            }
+}
+
+#journalDDClose,
+#klosetDDClose,
+#aroraDDClose{
+    display: none;
+}
+
+// clean up this code here use a mixin
+.dropDownComfort{
+    display: none;
+    .textDD{
+        margin: 10px 0;
+    }
+    .buttonDD{
+        justify-content: space-evenly;
+        .live{
+            margin-right: 2%;
         }
     }
 }
+
+.dropDownKloset{
+    display: none;
+    width: 200%;
+    .textDD{
+        margin: 10px 0;
+    }
+    .buttonDD{
+        justify-content: space-evenly;
+        .live{
+            margin-right: 2%;
+        }
+    }
+}
+
+.dropDownArora{
+    display: none;
+    .textDD{
+        margin: 10px 0;
+    }
+    .buttonDD{
+        justify-content: space-evenly;
+        .live{
+            margin-right: 2%;
+        }
+    }
+}
+
+.ddShown{
+    display: block;
+}
+
 
 .comfortJournal{
     margin-bottom: 5%;
@@ -86,11 +127,6 @@
 
 .arora{
     flex-basis: 48.5%;
-    figure{
-        img{
-            width: 95.5%;
-        }
-    }
 }
 
 

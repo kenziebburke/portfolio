@@ -35,9 +35,9 @@
         <nav id="navMenu" class="navMenu" aria-label="Navigation Menu">
             <!-- nav UL -->
             <ul class="navFlex">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li class="hamBorder"><a href="#about">About</a></li>
+                <li class="hamBorder"><a href="#skills">Skills</a></li>
+                <li class="hamBorder"><a href="#projects">Projects</a></li>
                 <li>
                     <button data-hover="Let's talk">
                         <a href="#contact">
@@ -48,6 +48,10 @@
                     </button>
                 </li>
             </ul>
+            <button class="navIcons">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+                <i class="fa fa-times" aria-hidden="true"></i>
+            </button>
         </nav>
         <ul class="socialsLinks flexContainer">
             <li class="circle">
@@ -95,55 +99,55 @@
             <div class="flexContainer tech">
                 <p class="techStack">Tech Stack</p>
                 <ul class="techSkills flexContainer">
-                    <li>
+                    <li class="mediaSkills skillsLeft">
                         <figure>
                             <img src="./assets/icons/icons8-html-50.svg" alt="HTML icon">
                         </figure>
                         <p>HTML 5</p>
                     </li>
-                    <li>
+                    <li class="mediaSkills">
                         <figure class="skillsIcon">
                             <img src="./assets/icons/icons8-css-50.svg" alt="CSS icon">
                         </figure>
                         <p>CSS3</p>
                     </li>
-                    <li>
+                    <li class="mediaSkills skillsLeft">
                         <figure class="skillsIcon">
                             <img src="./assets/icons/icons8-git-50.svg" alt="Github icon">
                         </figure>
                         <p>Github</p>
                     </li>
-                    <li>
+                    <li class="mediaSkills">
                         <figure class="skillsIcon">
                             <img src="./assets/icons/icons8-code-50.svg" alt="Code icon">
                         </figure>
                         <p>Vs Code</p>
                     </li>
-                    <li>
+                    <li class="mediaSkills skillsLeft">
                         <figure class="skillsIcon">
                             <img src="./assets/icons/icons8-sass-avatar-50.svg" alt="SASS icon">
                         </figure>
                         <p>SASS</p>
                     </li>
-                    <li>
+                    <li class="mediaSkills">
                         <figure class="skillsIcon">
                             <img src="./assets/icons/icons8-js-50.svg" alt="Javascript icon">
                         </figure>
                         <p>Javascript</p>
                     </li>
-                    <li>
+                    <li class="mediaSkills skillsLeft">
                         <figure class="skillsIcon">
                             <img src="./assets/icons/icons8-react-50.svg" alt="React icon">
                         </figure>
                         <p>React</p>
                     </li>
-                    <li>
+                    <li class="mediaSkills">
                         <figure class="skillsIcon">
                             <img src="./assets/icons/icons8-firebase-a-google's-mobile-platform-that-helps-you-quickly-develop-high-quality-apps-50.svg" alt="Firebase icon">
                         </figure>
                         <p>Firebase</p>
-                    </li>
-                    <li>
+                    </li >
+                    <li class="mediaSkills skillsLeft">
                         <figure class="skillsIcon">
                             <img src="./assets/icons/icons8-rest-api-50.svg" alt="RESTful API icon">
                         </figure>
@@ -221,14 +225,14 @@
                             <a href="https://comfortjournal.netlify.app/" target="_blank">
                                 <span class="sr-only">link to comfort journal opens in new tab</span>
                                 Comfort Journal</a>
-                            <button>
-                                <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                <i class="fa fa-angle-up" aria-hidden="true"></i>
+                            <button class="projectExpandComfort">
+                                <i id="journalDDOpen" class="fa fa-angle-down" aria-hidden="true"></i>
+                                <i id="journalDDClose" class="fa fa-angle-up" aria-hidden="true"></i>
                             </button>
                         </div>
                         <p>2023</p>
                     </div>
-                    <aside id="journalDD" class="dropDown">
+                    <aside id="journalDD" class="dropDownComfort">
                         <p class="sr-only">drop down menu with information pertaining to Comfort Journal.</p>
                         <div class="flexContainer textDD">
                             <p class="number">01</p>
@@ -266,14 +270,14 @@
                             <div class="projectExpand">
                                 <a href="https://devkenziebbprojectone.netlify.app/" target="_blank">
                                     <span class="sr-only">link to shoe kloset opens in new tab</span> Shoe Kloset </a>
-                                <button>
-                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                    <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                <button class="projectExpandKloset">
+                                    <i id="klosetDDOpen" class="fa fa-angle-down" aria-hidden="true"></i>
+                                    <i id="klosetDDClose" class="fa fa-angle-up" aria-hidden="true"></i>
                                 </button>
                             </div>
                             <p>2023</p>
                         </div>
-                        <aside id="klosetDD" class="dropDown">
+                        <aside id="klosetDD" class="dropDownKloset">
                             <p class="sr-only">drop down menu with information pertaining to Shoe Kloset.</p>
                             <div class="flexContainer textDD">
                                 <p class="number">02</p>
@@ -309,13 +313,13 @@
                                 <!-- link to arora -->
                                 <a href="">Arora</a>
                                 <button>
-                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                    <i class="fa fa-angle-up" aria-hidden="true"></i>
+                                    <i id="aroraDDClose" class="fa fa-angle-down" aria-hidden="true"></i>
+                                    <i id="aroraDDClose" class="fa fa-angle-up" aria-hidden="true"></i>
                                 </button>
                             </div>
                             <p>2023</p>
                         </div> 
-                        <aside id="aroraDD" class="dropDown">
+                        <aside id="aroraDD" class="dropDownArora">
                             <p class="sr-only">drop down menu with information pertaining to Arora.</p>
                             <div class="flexContainer textDD">
                                 <p class="number">03</p>
@@ -476,7 +480,7 @@
 </footer>
 
 <!-- LINK TO JS FILE -->
-<script type="module" src="/script.js"></script>
+<script src="./app.js"></script>
 
 </body>
 </html>
