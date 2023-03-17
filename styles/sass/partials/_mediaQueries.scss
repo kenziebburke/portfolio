@@ -1,7 +1,68 @@
 
 @media (max-width: 950px) {
+    // SKILLS SECTION
+    .techSkills{
+        li{
+            padding-right: 30px;
+        }
+    }
+
+    .soft{
+        .softUl{
+            .flexContainer{
+                flex-basis: 100%;
+                // position: relative;
+            }
+            // .flexContainer::before{
+            //     @include borderAnim;
+            // }
+                // ADD IN BORDER ANIMATION BOTTOM HERE
+            .softSkills{
+                flex-basis: 25%;
+            }
+            .bottom{
+                padding-bottom: 60px;
+            }
+            .triangles{
+                flex-basis: 30%;
+            }
+        }
+    }
+
+    // PROJECTS SECTION
+    .featuredProjects{
+        .bottomProjects{
+            flex-direction: column;
+        }
+    }
+
+    .shoeKloset, .arora{
+        margin-bottom: 5%;
+    }
+
+    // CONTACT SECTION
+    .contactTitle{
+        margin-right: 5%;
+    }
     
+    .contactTitle::after{
+        right: -20px;
+    }
+
+    // ABOUT SECTION
+    .aboutContainer{
+        flex-direction: column;
+        figure{
+            margin-bottom: 40px;
+        }
+        figure::before{
+            border: none;
+        }
+    }
+
 }
+
+
 
 @media (max-width: 550px) {  
 

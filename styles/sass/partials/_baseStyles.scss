@@ -79,6 +79,7 @@ button div{
 }
 
 .number{
+    font-family: 'Roboto Mono', monospace;
     border: 1px solid black;
     border-radius: 50%;
     height: 32px;
@@ -86,5 +87,5 @@ button div{
     line-height: 25px;
     text-align: center;
     padding: 3px;
-    margin:5px 2% 0 0;
+    margin-right: 2%;
 }

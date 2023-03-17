@@ -1,3 +1,9 @@
-// animate border on scroll
-// add hamburger menu
-// add drop down for info on projects
+// DROP DOWN MENU 
+
+
+
+// HAMBURGER MENU
+
+
+
+// ANIMATE ON SCROLL
