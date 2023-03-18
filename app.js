@@ -90,22 +90,6 @@ const dropDownToggleA = () => {
 dDIconsA.addEventListener("click", dropDownToggleA);
 
 // EMAIL ATTACHMENT==================================================
-// const userName = document.querySelector('#userName');
-// const userEmail = document.querySelector('#userEmail');
-// const userMessage = document.querySelector('#message');
-// const submitForm = document.querySelector('#submitForm');
-
-// const handleFormClear = () => {
-
-// 	userName.value = '';
-
-// 	userEmail.value = '';
-
-// 	userMessage.value = '';
-
-// }
-
-// submitForm.addEventListener("click", handleFormClear);
 
 const form = document.querySelector('form');
 
