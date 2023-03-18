@@ -4,7 +4,7 @@ const navIcons = document.querySelector('.navIcons');
 const hamIcon = document.querySelector('.fa-bars');
 const closeNav = document.querySelector('.fa-times');
 
-const menuToggle = function(){
+const menuToggle = () => {
     if (navMenu.classList.contains("shown"))
     {
         navMenu.classList.remove('shown');
@@ -27,7 +27,7 @@ const dDIconsC = document.querySelector('.projectExpandComfort');
 const openDDC = document.querySelector('#journalDDOpen');
 const closeDDC = document.querySelector('#journalDDClose');
 
-const dropDownToggle = function(){
+const dropDownToggle = () => {
     if (dropDownC.classList.contains("ddShown"))
     {
         dropDownC.classList.remove('ddShown');
@@ -49,7 +49,7 @@ const dDIconsK = document.querySelector('.projectExpandKloset');
 const openDDK = document.querySelector('#klosetDDOpen');
 const closeDDK = document.querySelector('#klosetDDClose');
 
-const dropDownToggleK = function(){
+const dropDownToggleK = () => {
     if (dropDownK.classList.contains("ddShown"))
     {
         dropDownK.classList.remove('ddShown');
@@ -72,7 +72,7 @@ const dDIconsA = document.querySelector('.projectExpandArora');
 const openDDA = document.querySelector('#aroraDDOpen');
 const closeDDA = document.querySelector('#aroraDDClose');
 
-const dropDownToggleA = function(){
+const dropDownToggleA = () => {
     if (dropDownA.classList.contains("ddShown"))
     {
         dropDownA.classList.remove('ddShown');
@@ -90,6 +90,27 @@ const dropDownToggleA = function(){
 dDIconsA.addEventListener("click", dropDownToggleA);
 
 // EMAIL ATTACHMENT==================================================
+// const userName = document.querySelector('#userName');
+// const userEmail = document.querySelector('#userEmail');
+// const userMessage = document.querySelector('#message');
+// const submitForm = document.querySelector('#submitForm');
 
+// const handleFormClear = () => {
+
+// 	userName.value = '';
+
+// 	userEmail.value = '';
+
+// 	userMessage.value = '';
+
+// }
+
+// submitForm.addEventListener("click", handleFormClear);
+
+const form = document.querySelector('form');
+
+window.onbeforeunload = () => {
+    form.reset();
+}
 
 // ANIMATE ON SCROLL==================================================
