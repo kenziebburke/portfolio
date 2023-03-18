@@ -276,7 +276,6 @@ button {
   background-color: #000;
   border: 1px solid #000;
   border-radius: 5px;
-  outline: none;
   position: relative;
   overflow: hidden;
   padding: 5px 8px;
@@ -760,6 +759,9 @@ input, label, textarea {
 
 .dropDownArora {
   display: none;
+  width: 200%;
+  position: relative;
+  right: 100%;
 }
 .dropDownArora .textDD {
   margin: 10px 0;
@@ -909,6 +911,9 @@ input, label, textarea {
       flex-basis: 45%;
   padding-right: 5%;
   min-width: 400px;
+}
+.aboutContainer figure img {
+  border-radius: 10px;
 }
 .aboutContainer figure::before {
   content: "";

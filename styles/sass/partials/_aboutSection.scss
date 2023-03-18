@@ -24,6 +24,9 @@
         flex-basis: 45%;
         padding-right: 5%;
         min-width: 400px;
+        img{
+            border-radius: 10px;
+        }
     }
     figure::before{
         content: '';

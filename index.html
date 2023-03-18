@@ -93,7 +93,7 @@
 
 <main>
     <!-- SKILLS SECTION -->
-    <section class="skills">
+    <section id="skills" class="skills">
         <div class="wrapper">
             <!-- TECH SKILLS -->
             <div class="flexContainer tech">
@@ -310,10 +310,9 @@
                         </figure>
                         <div class="flexContainer projectInfo">
                             <div class="projectExpand">
-                                <!-- link to arora -->
                                 <a href="">Arora</a>
-                                <button>
-                                    <i id="aroraDDClose" class="fa fa-angle-down" aria-hidden="true"></i>
+                                <button class="projectExpandArora">
+                                    <i id="aroraDDOpen" class="fa fa-angle-down" aria-hidden="true"></i>
                                     <i id="aroraDDClose" class="fa fa-angle-up" aria-hidden="true"></i>
                                 </button>
                             </div>
@@ -326,7 +325,6 @@
                                 <p>Arora is a project where I converted a PSD file into a fully accessible and responsive website using HTML and CSS. In addition to ensuring the website's design accurately matched the PSD file, I made sure that the website was built with accessibility in mind.  I also implemented responsive design techniques, allowing the website to adapt to different screen sizes and devices. To make sure the code was easy to maintain and update, I followed the DRY principle, eliminating redundant code and organizing the CSS using modular and reusable components.</p>
                             </div>
                             <div class="flexContainer buttonDD">
-                                <!-- link arora project make repo also make netlify -->
                                 <button data-hover="Live" class="live">
                                         <a href="" target="_blank"> 
                                             <span class="sr-only">link to arora opens in new tab</span>
@@ -378,15 +376,15 @@
                     </a>
                 </button>
             </div>
-            <form action="#" method="#" class="contactForm flexContainer" name="contactForm">
+            <form action="https://formspree.io/f/xjvdebpd" method="POST" class="contactForm flexContainer" name="contactForm">
                 <!-- name input -->
                 <label for="userName" class="sr-only">Name</label>
                 <input type="text" id="userName" name="userName" placeholder="Your Name"
                 required="true">
 
                 <!-- email input -->
-                <label for="userEmail" class="sr-only">Email</label>
-                <input type="text" id="userEmail" name="userName" placeholder="Your Email" required="true">
+                <label for="email" class="sr-only">Email</label>
+                <input type="text" id="userEmail" name="email" placeholder="Your Email" required="true">
 
                 <!-- message input -->
                 <label for="message">Your Message</label>

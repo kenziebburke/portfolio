@@ -58,12 +58,36 @@ const dropDownToggleK = function(){
     }
     else{
         dropDownK.classList.add('ddShown'); 
+        dropDownA.classList.remove('ddShown')
         closeDDK.style.display = 'block';
         openDDK.style.display = 'none';
     }
 }
 
 dDIconsK.addEventListener("click", dropDownToggleK);
+
+
+const dropDownA = document.querySelector('#aroraDD');
+const dDIconsA = document.querySelector('.projectExpandArora');
+const openDDA = document.querySelector('#aroraDDOpen');
+const closeDDA = document.querySelector('#aroraDDClose');
+
+const dropDownToggleA = function(){
+    if (dropDownA.classList.contains("ddShown"))
+    {
+        dropDownA.classList.remove('ddShown');
+        closeDDA.style.display ='none';
+        openDDA.style.display = 'block';
+    }
+    else{
+        dropDownA.classList.add('ddShown'); 
+        dropDownK.classList.remove('ddShown');
+        closeDDA.style.display = 'block';
+        openDDA.style.display = 'none';
+    }
+}
+
+dDIconsA.addEventListener("click", dropDownToggleA);
 
 // EMAIL ATTACHMENT==================================================
 
