@@ -85,21 +85,22 @@
         flex-basis: 50%;
         margin-right: 5%;
         h1{
-            font-size: clamp(4rem,2vw,2rem);
+            font-size: clamp(3rem, 2vw, 4rem);
             padding-bottom: 5px;
         }
         p{
-            font-size: clamp(1.5rem,2vw,1rem);
+            font-size: clamp(1rem, 2vw, 1.5rem);
             padding-bottom: 250px;
         }
         figure{
             height: 50px;
             width: 50px;
-            // img{
-            //     transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
-            //     transform-style: preserve-3d;
-            //     opacity: 1;
-            // }
+            img{
+                transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+                transform-style: preserve-3d;
+                opacity: 1;
+                // check here
+            }
         }
     }
     figure{

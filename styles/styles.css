@@ -343,7 +343,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p, a, li, button {
   font-family: "Abel", sans-serif;
-  font-size: clamp(1rem, 2vw, 0.8rem);
+  font-size: clamp(0.8rem, 2vw, 1rem);
   margin: 0;
 }
 
@@ -360,6 +360,7 @@ p {
 
 input, label, textarea {
   font-family: "Roboto Mono", monospace;
+  font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
 .headerNav {
@@ -482,16 +483,23 @@ input, label, textarea {
   margin-right: 5%;
 }
 .hero .headerTitle h1 {
-  font-size: clamp(4rem, 2vw, 2rem);
+  font-size: clamp(3rem, 2vw, 4rem);
   padding-bottom: 5px;
 }
 .hero .headerTitle p {
-  font-size: clamp(1.5rem, 2vw, 1rem);
+  font-size: clamp(1rem, 2vw, 1.5rem);
   padding-bottom: 250px;
 }
 .hero .headerTitle figure {
   height: 50px;
   width: 50px;
+}
+.hero .headerTitle figure img {
+  -webkit-transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+          transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  opacity: 1;
 }
 .hero figure {
   -ms-flex-preferred-size: 45%;
@@ -687,7 +695,7 @@ input, label, textarea {
   top: 3rem;
 }
 .projectsTitle h2 {
-  font-size: clamp(3rem, 2vw, 2rem);
+  font-size: clamp(2rem, 2vw, 3rem);
   padding-bottom: 10px;
 }
 .projectsTitle p {
@@ -802,7 +810,7 @@ input, label, textarea {
   text-transform: uppercase;
 }
 .contact h2 {
-  font-size: clamp(3rem, 2vw, 2rem);
+  font-size: clamp(2rem, 2vw, 3rem);
   padding-bottom: 10rem;
 }
 
@@ -883,7 +891,7 @@ input, label, textarea {
   position: relative;
   text-align: center;
   text-transform: uppercase;
-  font-size: clamp(3rem, 2vw, 2rem);
+  font-size: clamp(2rem, 2vw, 3rem);
   padding: 1rem 0;
 }
 .about h2::before {
@@ -1291,5 +1299,65 @@ footer {
   }
   .footerLeft::after {
     right: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .soft {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .soft .softSkillsP {
+    padding-bottom: 30px;
+  }
+  .soft .softSkillsP::after {
+    border: none;
+  }
+  .footerSocials {
+    width: 75%;
+  }
+}
+@media (max-width: 350px) {
+  .headerNav .logo {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+  .headerNav .socialsLinks {
+    display: none;
+  }
+  .hero .headerTitle figure {
+    height: 30px;
+    width: 30px;
+    top: 250px;
+  }
+  .contactSocials {
+    width: 40%;
+    padding-bottom: 15px;
+  }
+  .contact form textarea {
+    height: 70px;
+  }
+  .footerFlex {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footerLeft .logo p {
+    margin-left: 2px;
+  }
+  .footerSocials {
+    width: 85%;
+  }
+  .footerLeft::after {
+    right: 0px;
+  }
+  .footerNavFlex {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .footerDiamond {
+    display: none;
   }
 }

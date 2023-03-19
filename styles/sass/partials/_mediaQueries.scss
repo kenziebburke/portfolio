@@ -273,10 +273,89 @@
     }
 }
 
+@media (max-width: 500px) {
+    // SKILLS
+    .soft{
+        flex-direction: column;
+        .softSkillsP{
+            padding-bottom: 30px;
+        }
+    }
+
+    .soft .softSkillsP::after{
+        border: none;
+    }
+
+    // FOOTER
+    .footerSocials {
+        width: 75%;
+    }
+}
 
 
 
+@media (max-width: 350px) {
+    // HEADER
+    .headerNav{
+        .logo{
+            flex-basis: 50%;
+        }
+        .socialsLinks{
+            display: none;
+        }
+    }
 
-@media (max-width: 400px) {
+    .hero{
+        .headerTitle{
+            figure{
+                height: 30px;
+                width: 30px;
+                top:250px
+            }
+        }
+    }
 
+
+    // CONTACT
+    .contactSocials{
+        width: 40%;
+        padding-bottom: 15px;
+    }
+
+    .contact{
+        form{
+            textarea{
+                height: 70px;
+            }
+        }
+    }
+
+    // FOOTER
+    .footerFlex{
+        justify-content: space-between;
+    }
+
+    .footerLeft{
+        .logo{
+            p{
+                margin-left: 2px;
+            }
+        }
+    }
+
+    .footerSocials {
+        width: 85%;
+    }
+
+    .footerLeft::after {
+        right: 0px;
+    }
+
+    .footerNavFlex{
+        align-items: flex-end;
+    }
+
+    .footerDiamond{
+        display: none;
+    }
 }
