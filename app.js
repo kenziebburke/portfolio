@@ -59,6 +59,7 @@ const dropDownToggleK = () => {
     else{
         dropDownK.classList.add('ddShown'); 
         dropDownA.classList.remove('ddShown')
+        dropDownC.classList.remove('ddShown');
         closeDDK.style.display = 'block';
         openDDK.style.display = 'none';
     }
@@ -82,6 +83,7 @@ const dropDownToggleA = () => {
     else{
         dropDownA.classList.add('ddShown'); 
         dropDownK.classList.remove('ddShown');
+        dropDownC.classList.remove('ddShown');
         closeDDA.style.display = 'block';
         openDDA.style.display = 'none';
     }

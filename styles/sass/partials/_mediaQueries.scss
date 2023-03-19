@@ -53,6 +53,16 @@
         margin-bottom: 5%;
     }
 
+    .dropDownKloset,
+    .dropDownArora{
+        width: 100%;
+    }
+
+    .dropDownArora{
+        position: static;
+    }
+
+
     // CONTACT SECTION
     .contactTitle{
         margin-right: 5%;
@@ -67,13 +77,26 @@
         flex-direction: column;
         figure{
             margin-bottom: 40px;
+            min-width: 1px;
+            flex-basis: 100%;
+            padding-right: 0;
         }
         figure::before{
             border: none;
         }
     }
 
+    // FOOTER
+    .footerSocials{
+        width: 50%;
+            li{
+                margin-right: 2px;
+            }
+    }
 }
+
+
+
 
 @media (max-width:900px){
     // HAMBURGER MENU STARTS HERE
@@ -125,12 +148,53 @@
             transform: translateY(15%);
         }
     }
+
+    // CONTACT SECTION
+    .contactTitle{
+        flex-basis: 30%;
+        margin-right: 5%;
+    }
+
 }
 
-@media (max-width: 550px) {  
+@media (max-width: 760px){
+    // HEADER
+    .headerNav{
+        nav{
+            flex-basis: 20%;
+        }
+        .socialsLinks{
+            flex-basis: 25%;
+            li{
+                margin-right: 2px;
+            }
+        }
+    }
 
-    
-    
+    // PROJECTS
+    .projectsTitle{
+        position: static;
+        top: 0;
+        flex-basis: 100%;
+        margin-right: 0;
+        padding-bottom: 20px;
+    }
+
+    .featuredProjects{
+        flex-basis: 100%;
+    }
+}
+
+
+
+
+@media (max-width: 600px) {  
+    // HEADER NAV
+    .headerNav{
+        .navIcons{
+            padding: 0 10px 10px 110px;
+        }
+    }
     // HEADER HERO
     .hero{
         flex-direction: column;
@@ -179,10 +243,40 @@
         }
     }
 
+    // CONTACT
+    .contactContainer{
+        flex-direction: column;
+    }
 
+    .contactTitle{
+        flex-basis: 100%;
+        margin-right: 0;
+    }
 
+    .contactTitle::after{
+        border: none;
+    }
+
+    .contact{
+        h2{
+            padding-bottom: 2rem;
+        }
+    }
+
+    .contactSocials{
+        width: 30%;
+    }
+
+    // FOOTER
+    .footerLeft::after{ 
+        right: 20px;
+    }
 }
 
-@media (max-width: 320px) {
+
+
+
+
+@media (max-width: 400px) {
 
 }

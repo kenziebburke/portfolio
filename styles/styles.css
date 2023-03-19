@@ -808,8 +808,6 @@ input, label, textarea {
 
 .contactContainer {
   position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .contactContainer::before {
@@ -1096,6 +1094,13 @@ footer {
   .shoeKloset, .arora {
     margin-bottom: 5%;
   }
+  .dropDownKloset,
+  .dropDownArora {
+    width: 100%;
+  }
+  .dropDownArora {
+    position: static;
+  }
   .contactTitle {
     margin-right: 5%;
   }
@@ -1110,9 +1115,19 @@ footer {
   }
   .aboutContainer figure {
     margin-bottom: 40px;
+    min-width: 1px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding-right: 0;
   }
   .aboutContainer figure::before {
     border: none;
+  }
+  .footerSocials {
+    width: 50%;
+  }
+  .footerSocials li {
+    margin-right: 2px;
   }
 }
 @media (max-width: 900px) {
@@ -1172,8 +1187,41 @@ footer {
     -webkit-transform: translateY(15%);
             transform: translateY(15%);
   }
+  .contactTitle {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+    margin-right: 5%;
+  }
 }
-@media (max-width: 550px) {
+@media (max-width: 760px) {
+  .headerNav nav {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+  .headerNav .socialsLinks {
+    -ms-flex-preferred-size: 25%;
+        flex-basis: 25%;
+  }
+  .headerNav .socialsLinks li {
+    margin-right: 2px;
+  }
+  .projectsTitle {
+    position: static;
+    top: 0;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-right: 0;
+    padding-bottom: 20px;
+  }
+  .featuredProjects {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .headerNav .navIcons {
+    padding: 0 10px 10px 110px;
+  }
   .hero {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1220,5 +1268,28 @@ footer {
   }
   .skills .skillsLeft {
     padding: 0 2% 0 3%;
+  }
+  .contactContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactTitle {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-right: 0;
+  }
+  .contactTitle::after {
+    border: none;
+  }
+  .contact h2 {
+    padding-bottom: 2rem;
+  }
+  .contactSocials {
+    width: 30%;
+  }
+  .footerLeft::after {
+    right: 20px;
   }
 }
