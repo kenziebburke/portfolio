@@ -1186,6 +1186,7 @@ footer {
     border-bottom: 1px solid black;
   }
   .headerNav .navIcons {
+    color: black;
     padding: 0 10px 10px 200px;
     display: block;
     border: none;
