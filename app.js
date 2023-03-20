@@ -105,7 +105,6 @@ const buttonOne = document.querySelector('.buttonOne');
 const buttonHoverOne = document.querySelector('.buttonHoverOne');
 
 const buttonTwo = document.querySelector('.buttonTwo');
-console.log(buttonTwo)
 const buttonHoverTwo = document.querySelector('.buttonHoverTwo');
 
 const buttonThree = document.querySelector('.buttonThree');
@@ -142,6 +141,15 @@ const buttonAnimOne = (event) => {
     }
 }
 
+buttonOne.addEventListener("focusin", () => {
+    buttonHoverOne.classList.add('hoverAnim');
+});
+
+buttonOne.addEventListener("focusout", () => {
+    buttonHoverOne.classList.add('hoverAnim');
+});
+
+
 const buttonAnimTwo = (event) => {
     if (event.type == 'mouseover')
     {
@@ -151,6 +159,14 @@ const buttonAnimTwo = (event) => {
         buttonHoverTwo.classList.remove('hoverAnim');
     }
 }
+
+buttonTwo.addEventListener("focusin", () => {
+    buttonHoverTwo.classList.add('hoverAnim');
+});
+
+buttonTwo.addEventListener("focusout", () => {
+    buttonHoverTwo.classList.add('hoverAnim');
+});
 
 const buttonAnimThree = (event) => {
     if (event.type == 'mouseover')
@@ -162,6 +178,14 @@ const buttonAnimThree = (event) => {
     }
 }
 
+buttonThree.addEventListener("focusin", () => {
+    buttonHoverThree.classList.add('hoverAnim');
+});
+
+buttonThree.addEventListener("focusout", () => {
+    buttonHoverThree.classList.add('hoverAnim');
+});
+
 const buttonAnimFour = (event) => {
     if (event.type == 'mouseover')
     {
@@ -171,6 +195,14 @@ const buttonAnimFour = (event) => {
         buttonHoverFour.classList.remove('hoverAnim');
     }
 }
+
+buttonFour.addEventListener("focusin", () => {
+    buttonHoverFour.classList.add('hoverAnim');
+});
+
+buttonFour.addEventListener("focusout", () => {
+    buttonHoverFour.classList.add('hoverAnim');
+});
 
 const buttonAnimFive = (event) => {
     if (event.type == 'mouseover')
@@ -182,6 +214,14 @@ const buttonAnimFive = (event) => {
     }
 }
 
+buttonFive.addEventListener("focusin", () => {
+    buttonHoverFive.classList.add('hoverAnim');
+});
+
+buttonFive.addEventListener("focusout", () => {
+    buttonHoverFive.classList.add('hoverAnim');
+});
+
 const buttonAnimSix = (event) => {
     if (event.type == 'mouseover')
     {
@@ -191,6 +231,14 @@ const buttonAnimSix = (event) => {
         buttonHoverSix.classList.remove('hoverAnim');
     }
 }
+
+buttonSix.addEventListener("focusin", () => {
+    buttonHoverSix.classList.add('hoverAnim');
+});
+
+buttonSix.addEventListener("focusout", () => {
+    buttonHoverSix.classList.add('hoverAnim');
+});
 
 const buttonAnimSeven = (event) => {
     if (event.type == 'mouseover')
@@ -202,6 +250,14 @@ const buttonAnimSeven = (event) => {
     }
 }
 
+buttonSeven.addEventListener("focusin", () => {
+    buttonHoverSeven.classList.add('hoverAnim');
+});
+
+buttonSeven.addEventListener("focusout", () => {
+    buttonHoverSeven.classList.add('hoverAnim');
+});
+
 const buttonAnimEight = (event) => {
     if (event.type == 'mouseover')
     {
@@ -211,6 +267,14 @@ const buttonAnimEight = (event) => {
         buttonHoverEight.classList.remove('hoverAnim');
     }
 }
+
+buttonEight.addEventListener("focusin", () => {
+    buttonHoverEight.classList.add('hoverAnim');
+});
+
+buttonEight.addEventListener("focusout", () => {
+    buttonHoverEight.classList.add('hoverAnim');
+});
 
 const buttonAnimNine = (event) => {
     if (event.type == 'mouseover')
@@ -222,6 +286,14 @@ const buttonAnimNine = (event) => {
     }
 }
 
+buttonNine.addEventListener("focusin", () => {
+    buttonHoverNine.classList.add('hoverAnim');
+});
+
+buttonNine.addEventListener("focusout", () => {
+    buttonHoverNine.classList.add('hoverAnim');
+});
+
 const buttonAnimTen = (event) => {
     if (event.type == 'mouseover')
     {
@@ -231,6 +303,14 @@ const buttonAnimTen = (event) => {
         buttonHoverTen.classList.remove('hoverAnim');
     }
 }
+
+buttonTen.addEventListener("focusin", () => {
+    buttonHoverTen.classList.add('hoverAnim');
+});
+
+buttonTen.addEventListener("focusout", () => {
+    buttonHoverTen.classList.add('hoverAnim');
+});
 
 buttonOne.onmouseover = buttonOne.onmouseout = buttonAnimOne;
 buttonTwo.onmouseover = buttonTwo.onmouseout = buttonAnimTwo;
@@ -243,11 +323,5 @@ buttonEight.onmouseover = buttonEight.onmouseout = buttonAnimEight;
 buttonNine.onmouseover = buttonNine.onmouseout = buttonAnimNine;
 buttonTen.onmouseover = buttonTen.onmouseout = buttonAnimTen;
 
-buttonOne.addEventListener('click', () => {
-    el.reset();
-})
 
-buttonTwo.addEventListener('click', (b) => {
-    buttonTwo.reset();
-})
 // ANIMATE ON SCROLL==================================================

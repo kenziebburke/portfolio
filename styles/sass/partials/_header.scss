@@ -48,19 +48,15 @@
 .circle{
     a{
         line-height: 32px;
+        @include circle;
     }
-    @include circle;
-}
-
-.circle:hover,
-.circle:focus{
-    a{
+    a:hover,
+    a:focus{
         color: #fdfbf5;
+        @include circle;
+        background-color: #000;
     }
-    background-color: #000;
 }
-
-
 
 .headerNav::before{
     @include borderAnim;

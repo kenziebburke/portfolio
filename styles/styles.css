@@ -424,7 +424,8 @@ input, label, textarea {
           justify-content: space-between;
 }
 
-.circle {
+.circle a {
+  line-height: 32px;
   border: 1px solid black;
   border-radius: 50%;
   height: 32px;
@@ -433,18 +434,21 @@ input, label, textarea {
   -webkit-transition: background-color 0.3s ease, color 0.3s ease;
   transition: background-color 0.3s ease, color 0.3s ease;
   cursor: pointer;
+  display: inline-block;
 }
-.circle a {
-  line-height: 32px;
-}
-
-.circle:hover,
-.circle:focus {
-  background-color: #000;
-}
-.circle:hover a,
-.circle:focus a {
+.circle a:hover,
+.circle a:focus {
   color: #fdfbf5;
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+  background-color: #000;
 }
 
 .headerNav::before {
