@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- LINK TO STYLESHEET -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 
 	<!-- LINK TO GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,213 +16,535 @@
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
     <!-- LINK FAVICON -->
+    <link rel="icon" type="image/x-icon" href="./assets/icons8-bookmark-16.png">
 
     <title>Kenzie Burke</title>
 </head>
 <body>
-    <!-- HEADER -->
-    <header>
-        <div class="flexContainer wrapper">
-            <!-- LOGO -->
-            <div class="logo">
-                <!-- add alt text -->
+<!-- HEADER -->
+<header>
+    <div class="headerNav wrapper">
+        <!-- LOGO -->
+        <div class="logo">
+            <figure>
+                <img src="./assets/logo.png" alt="logo with multiple box outlines the overlap one another">
+            </figure>
+            <p>KB</p>
+        </div>
+        <!-- NAVIGATION MENU -->
+        <nav id="navMenu" class="navMenu" aria-label="Navigation Menu">
+            <!-- nav UL -->
+            <ul class="navFlex">
+                <li class="hamBorder"><a href="#about">About</a></li>
+                <li class="hamBorder"><a href="#skills">Skills</a></li>
+                <li class="hamBorder"><a href="#projects">Projects</a></li>
+                <li>
+                    <a href="#contact" class="button buttonOne" target="_blank">
+                        <span class="sr-only">Link will open to contact section</span>
+                        <div class="buttonInnerText">
+                            Let's talk
+                        </div>
+                        <div class="buttonHover buttonHoverOne">
+                            <span class="sr-only">This second link is for styling purposes</span>
+                            Let's talk
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <button class="navIcons">
+                <i class="fa fa-bars" aria-hidden="true">
+                    <span class="sr-only">Open navigation menu</span>
+                </i>
+                <i class="fa fa-times" aria-hidden="true">
+                    <span class="sr-only">Close navigation menu</span>
+                </i>
+            </button>
+        </nav>
+        <ul class="socialsLinks flexContainer">
+            <li class="circle">
+                <a href="https://github.com/kenziebburke" target="_blank">
+                    GH 
+                    <span class="sr-only">link to github opens in new tab</span>
+                </a>
+            </li>
+            <li class="circle">
+                <a href="https://www.linkedin.com/in/kenzieburke/ " target="_blank">
+                    LI
+                    <span class="sr-only">link to linkedin opens in new tab</span>
+                </a>
+            </li>
+            <li class="circle">
+                <a href="https://calendly.com/kenzieburkecodes" target="_blank">
+                    C
+                    <span class="sr-only">link to calendly opens in new tab</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="wrapper flexContainer hero">
+        <!-- HEADER TITLE -->
+        <article class="flexContainer headerTitle">
+            <h1>Kenzie Burke</h1>
+            <p>Web Developer & Graphic Designer</p>
+            <figure>
+                <img src="./assets/diamond.png" alt="logo of a diamond cross-sectioned into for portions filled in black on one quarter and lined on another.">
+            </figure>
+        </article><!-- .end of headerTitle -->
+        <!-- HEADER IMG -->
+        <figure>
+            <img src="./assets/headshot.jpg" alt="Black and white portrait of a girl with short blond hair smiling">
+        </figure>
+    </div> <!-- .end of hero -->
+</header>
+
+<main>
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="skills">
+        <div class="wrapper">
+            <!-- TECH SKILLS -->
+            <div class="flexContainer tech">
+                <p class="techStack">Tech Stack</p>
+                <ul class="techSkills flexContainer">
+                    <li class="mediaSkills skillsLeft">
+                        <figure>
+                            <img src="./assets/icons/icons8-html-50.svg" alt="HTML icon">
+                        </figure>
+                        <p>HTML 5</p>
+                    </li>
+                    <li class="mediaSkills">
+                        <figure class="skillsIcon">
+                            <img src="./assets/icons/icons8-css-50.svg" alt="CSS icon">
+                        </figure>
+                        <p>CSS3</p>
+                    </li>
+                    <li class="mediaSkills skillsLeft">
+                        <figure class="skillsIcon">
+                            <img src="./assets/icons/icons8-git-50.svg" alt="Github icon">
+                        </figure>
+                        <p>Github</p>
+                    </li>
+                    <li class="mediaSkills">
+                        <figure class="skillsIcon">
+                            <img src="./assets/icons/icons8-code-50.svg" alt="Code icon">
+                        </figure>
+                        <p>Vs Code</p>
+                    </li>
+                    <li class="mediaSkills skillsLeft">
+                        <figure class="skillsIcon">
+                            <img src="./assets/icons/icons8-sass-avatar-50.svg" alt="SASS icon">
+                        </figure>
+                        <p>SASS</p>
+                    </li>
+                    <li class="mediaSkills">
+                        <figure class="skillsIcon">
+                            <img src="./assets/icons/icons8-js-50.svg" alt="Javascript icon">
+                        </figure>
+                        <p>Javascript</p>
+                    </li>
+                    <li class="mediaSkills skillsLeft">
+                        <figure class="skillsIcon">
+                            <img src="./assets/icons/icons8-react-50.svg" alt="React icon">
+                        </figure>
+                        <p>React</p>
+                    </li>
+                    <li class="mediaSkills">
+                        <figure class="skillsIcon">
+                            <img src="./assets/icons/icons8-firebase-a-google's-mobile-platform-that-helps-you-quickly-develop-high-quality-apps-50.svg" alt="Firebase icon">
+                        </figure>
+                        <p>Firebase</p>
+                    </li >
+                    <li class="mediaSkills skillsLeft">
+                        <figure class="skillsIcon">
+                            <img src="./assets/icons/icons8-rest-api-50.svg" alt="RESTful API icon">
+                        </figure>
+                        <p>Restful APIs</p>
+                    </li>
+                </ul>
+            </div><!-- end of tech .flexContainer -->
+
+            <!-- SOFT SKILLS -->
+            <div class="flexContainer soft">
+                <p class="softSkillsP">Soft skills</p>
+                <ul class="flexContainer softUl">
+                    <li class="flexContainer top">
+                        <figure class="softSkills">
+                            <img src="./assets/icons/peer.svg" alt="Logo of three circles over layed but offset from one another up and to the right.">
+                        </figure>
+
+                        <article class="peer">
+                            <h3>Peer programming</h3>
+                            <p>Git hub, communication, collaboration.</p>
+                        </article>
+                    </li>
+                    <li class="flexContainer top">
+                        <figure class="softSkills triangles">
+                            <img src="./assets/icons/design.svg" alt="Logo of four triangles over layed but offset from one another down and to the right.">
+                        </figure>
+
+                        <article>
+                            <h3>Design</h3>
+                            <p>Illistrator, Photoshop, Premier Pro, Animate Procreate, Rhino, Grasshopper.</p>
+                        </article>
+                    </li>
+                    <li class="flexContainer bottom">
+                        <figure class="softSkills">
+                            <img src="./assets/icons/accessibility.svg" alt="Logo of five circles inset within one another.">
+                        </figure>
+
+                        <article class="accessibility">
+                            <h3>Accessible design</h3>
+                            <p>WCAG, best practices, inclusivity forward. </p>
+                        </article>
+                    </li>
+                    <li class="flexContainer bottom">
+                        <figure class="softSkills">
+                            <img src="./assets/icons/scope.svg" alt="Logo of a simple for sided star, similar to a diamond but with the sides curving in.">
+                        </figure>
+
+                        <article>
+                            <h3>Scope management</h3>
+                            <p>MVP maintenance, stretch goal planning, time management.</p>
+                        </article>
+                    </li>
+                </ul>
+            </div><!-- end of soft .flexContainer -->
+        </div><!-- end of .wrapper -->
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects">
+        <div class="wrapper flexContainer projectsContainer">
+            <article class="projectsTitle">
+                <h2>Featured Work</h2>
+                <p>HTML5, CSS3, GITHUB, VS Code, SASS, JavaScript, REACT, Firebase, RESTful APIS</p>
+            </article> 
+            <div class="flexContainer featuredProjects">
+                <div class="comfortJournal">
+                    <a href="https://comfortjournal.netlify.app/" target="_blank">
+                        <span class="sr-only">link to comfort journal opens in new tab</span>
+                        <figure>
+                            <img src="./assets/comfortjournal.jpg" alt="Rendering of a screen grab from Comfort Journal webpage, on the left is a tree and on the right title comfort journal with date and squiggle lines">
+                        </figure>
+                    </a>
+                    <div class="flexContainer projectInfo">
+                        <div class="projectExpand">
+                            <a href="https://comfortjournal.netlify.app/" target="_blank">
+                                <span class="sr-only">link to comfort journal opens in new tab</span>
+                                Comfort Journal</a>
+                            <button class="projectExpandComfort">
+                                <i id="journalDDOpen" class="fa fa-angle-down" aria-hidden="true">
+                                    <span class="sr-only">Open Comfort Journal drop down information menu</span>
+                                </i>
+                                <i id="journalDDClose" class="fa fa-angle-up" aria-hidden="true">
+                                    <span class="sr-only">Close Comfort Journal drop down information menu</span>
+                                </i>
+                            </button>
+                        </div>
+                        <p>2023</p>
+                    </div>
+                    <aside id="journalDD" class="dropDownComfort">
+                        <p class="sr-only">drop down menu with information pertaining to Comfort Journal.</p>
+                        <div class="flexContainer textDD">
+                            <p class="number">01</p>
+                            <p>Comfort Journal was a collaborative project.  My partner and I designed a live journaling system using HTML, SCSS, and JavaScript, with realtime data storage on Firebase. The system was designed to provide a user-friendly and engaging experience, with each entry automatically timestamped with the date. To inspire users, we implemented a feature that randomly populates quotes on page load and an image carousel to spark creativity. Using Git collaboration and peer programming techniques, we were able to work together seamlessly, allowing for efficient and effective development.</p>
+                        </div>
+                        <div class="flexContainer buttonDD">
+                            <a href="https://comfortjournal.netlify.app/" class="button buttonTwo live" target="_blank">
+                                <span class="sr-only">Link will open to new tab with featuring Shoe Kloset live site</span>
+                                <div class="buttonInnerText">
+                                    Live
+                                </div>
+                                <div class="buttonHover buttonHoverTwo">
+                                    <span class="sr-only">This second link is for styling purposes</span>
+                                    Live
+                                </div>
+                            </a>
+                            <a href="https://github.com/paigethai/Project02ComfortJournal/branches" class="button buttonThree" target="_blank">
+                                <span class="sr-only">Link will open to new tab with featuring comfort journal repo</span>
+                                <div class="buttonInnerText">
+                                    Repo
+                                </div>
+                                <div class="buttonHover buttonHoverThree">
+                                    <span class="sr-only">This second link is for styling purposes</span>
+                                    Repo
+                                </div>
+                            </a>
+                        </div>
+                    </aside>
+                </div>
+                <div class="flexContainer bottomProjects">
+                    <div class="shoeKloset">
+                        <a href="https://devkenziebbprojectone.netlify.app/" target="_blank">
+                            <span class="sr-only">link to shoe kloset opens in new tab</span>
+                            <figure>
+                                <img src="./assets/shoekloset.jpg" alt="Rendering of a screen grab from Shoe Kloset webpage, on the left is the title of shoe kloset and text find something new and on the right is legs wearing sneakers">
+                            </figure>
+                        </a>
+                        <div class="flexContainer projectInfo">
+                            <div class="projectExpand">
+                                <a href="https://devkenziebbprojectone.netlify.app/" target="_blank">
+                                    <span class="sr-only">link to shoe kloset opens in new tab</span> Shoe Kloset 
+                                </a>
+                                <button class="projectExpandKloset">
+                                    <i id="klosetDDOpen" class="fa fa-angle-down" aria-hidden="true">
+                                        <span class="sr-only">Open Shoe Kloset drop down information menu</span>
+                                    </i>
+                                    <i id="klosetDDClose" class="fa fa-angle-up" aria-hidden="true">
+                                        <span class="sr-only">Close Shoe Kloset drop down information menu</span>
+                                    </i>
+                                </button>
+                            </div>
+                            <p>2023</p>
+                        </div>
+                        <aside id="klosetDD" class="dropDownKloset">
+                            <p class="sr-only">drop down menu with information pertaining to Shoe Kloset.</p>
+                            <div class="flexContainer textDD">
+                                <p class="number">02</p>
+                                <p>Shoe Kloset is a conversion of a  PSD file and converted it into a live website using HTML, SCSS, and JavaScript. The website was designed to be both accessible and responsive, and I made sure to adhere to best practices for both. I followed the DRY code principle and used SCSS to write modular and reusable CSS components. Finally, I used JavaScript to add interactivity to the website. The end result was a website that not only looked great and functioned flawlessly, but also provided a cohesive user interface experience.
+                                </p>
+                            </div>
+                            <div class="flexContainer buttonDD">
+                                <!-- deploy main branch to site on netlify -->
+                                <a href="https://devkenziebbprojectone.netlify.app/" class="button buttonFour live" target="_blank">
+                                    <span class="sr-only">Link will open to new tab with featuring Shoe Kloset live site</span>
+                                    <div class="buttonInnerText">
+                                        Live
+                                    </div>
+                                    <div class="buttonHover buttonHoverFour">
+                                        <span class="sr-only">This second link is for styling purposes</span>
+                                        Live
+                                    </div>
+                                </a>
+                                <a href="https://github.com/kenziebburke/kenzieBurkeProjectOne" class="button buttonFive repo" target="_blank">
+                                    <span class="sr-only">Link will open to new tab with featuring Shoe Kloset repo</span>
+                                    <div class="buttonInnerText">
+                                        Repo
+                                    </div>
+                                    <div class="buttonHover buttonHoverFive">
+                                        <span class="sr-only">This second link is for styling purposes</span>
+                                        Repo
+                                    </div>
+                                </a>
+                            </div>
+                        </aside>
+                    </div>
+                    <div class="arora">
+                        <figure>
+                            <img src="./assets/arora.jpg" alt="Rendering of a screen grab from Arora webpage, on the left is the title of Arora and on the right is a woman wearing a large chain">
+                        </figure>
+                        <div class="flexContainer projectInfo">
+                            <div class="projectExpand">
+                                <a href="">Arora</a>
+                                <button class="projectExpandArora">
+                                    <i id="aroraDDOpen" class="fa fa-angle-down" aria-hidden="true">
+                                        <span class="sr-only">Open Arora drop down information menu</span>
+                                    </i>
+                                    <i id="aroraDDClose" class="fa fa-angle-up" aria-hidden="true">
+                                        <span class="sr-only">Close Arora drop down information menu</span>
+                                    </i>
+                                </button>
+                            </div>
+                            <p>2023</p>
+                        </div> 
+                        <aside id="aroraDD" class="dropDownArora">
+                            <p class="sr-only">drop down menu with information pertaining to Arora.</p>
+                            <div class="flexContainer textDD">
+                                <p class="number">03</p>
+                                <p>Arora is a project where I converted a PSD file into a fully accessible and responsive website using HTML and CSS. In addition to ensuring the website's design accurately matched the PSD file, I made sure that the website was built with accessibility in mind.  I also implemented responsive design techniques, allowing the website to adapt to different screen sizes and devices. To make sure the code was easy to maintain and update, I followed the DRY principle, eliminating redundant code and organizing the CSS using modular and reusable components.</p>
+                            </div>
+                            <div class="flexContainer buttonDD">
+                                <a href="" class="button buttonSix live" target="_blank">
+                                    <span class="sr-only">Link will open to new tab with featuring Arora live site</span>
+                                    <div class="buttonInnerText">
+                                        Live
+                                    </div>
+                                    <div class="buttonHover buttonHoverSix">
+                                        <span class="sr-only">This second link is for styling purposes</span>
+                                        Live
+                                    </div>
+                                </a>
+                                <a href="" class="button buttonSeven repo" target="_blank">
+                                    <span class="sr-only">Link will open to new tab with featuring Arora repo</span>
+                                    <div class="buttonInnerText">
+                                        Repo
+                                    </div>
+                                    <div class="buttonHover buttonHoverSeven">
+                                        <span class="sr-only">This second link is for styling purposes </span>
+                                        Repo
+                                    </div>
+                                </a>
+                            </div>
+                        </aside>
+                    </div><!-- end of flexContainer arora -->
+                </div><!-- end of flexContainer  bottomProjects-->
+            </div> <!-- end of flexContainer featuredProjects -->
+        </div><!-- end of wrapper -->
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+        <div class="wrapper flexContainer contactContainer">
+            <div class="contactTitle">
+                <p>Contact</p>
+                <h2>Creating together.</h2>
+                <p>Find me on</p>
+                <ul class="contactSocials">
+                    <li class="circle">
+                        <a href="https://github.com/kenziebburke" target="_blank">
+                            GH 
+                            <span class="sr-only">link to github opens in new tab</span>
+                        </a>
+                    </li>
+                    <li class="circle">
+                        <a href="https://www.linkedin.com/in/kenzieburke/ " target="_blank">
+                            LI
+                            <span class="sr-only">link to linkedin opens in new tab</span>
+                        </a>
+                    </li>
+                    <li class="circle">
+                        <a href="https://calendly.com/kenzieburkecodes" target="_blank">
+                            C
+                            <span class="sr-only">link to calendly opens in new tab</span>
+                        </a>
+                    </li>
+                </ul>
+                <a href="https://drive.google.com/file/d/1b704cEMAWMfs1MSeEQPkHN1n9wKGiGQY/view?usp=sharing" class="button buttonEight resume" target="_blank">
+                    <span class="sr-only">Link will open to new tab with featuring Kenzie Burke's resume</span>
+                    <div class="buttonInnerText">
+                        Resume
+                    </div>
+                    <div class="buttonHover buttonHoverEight">
+                        <span class="sr-only">This second link is for styling purposes </span>
+                        Resume
+                    </div>
+                </a>
+            </div>
+            <form action="https://formspree.io/f/xjvdebpd" method="POST" class="contactForm flexContainer" name="contactForm">
+                <!-- name input -->
+                <label for="userName" class="sr-only">Name</label>
+                <input type="text" id="userName" name="userName" placeholder="Your Name"
+                required="true">
+
+                <!-- email input -->
+                <label for="email" class="sr-only">Email</label>
+                <input type="text" id="userEmail" name="email" placeholder="Your Email" required="true">
+
+                <!-- message input -->
+                <label for="message">Your Message</label>
+                <textarea name="message" id="message" required="true" minlength="5"></textarea>
+
+                <button id="submitForm" type="submit" class="button buttonNine">
+                    <div class="buttonInnerText">
+                        SUBMIT
+                    </div>
+                    <div class="buttonHover buttonHoverNine">
+                        <span class="sr-only">This second "submit" is for styling purposes </span>
+                        SUBMIT
+                    </div>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+        <div class="wrapper">
+            <h2>About</h2>
+            <div class="flexContainer aboutContainer">
                 <figure>
-                    <img src="./assets/logo.png" alt="">
+                    <img src="./assets/studio.jpg" alt="Black and white drawing of a studio with a checkered rug and a desk. to the right is a fish tank with a plant hanging above it.">
+                </figure>
+                <div class="flexContainer aboutText">
+                    <article class="aboutTextContainer">
+                        <div class="flexContainer">
+                            <p class="number">01</p>
+                            <h3>Vision</h3>
+                        </div>
+                        <p>Committed to promoting accessibility in web development, with a vision of a future where all users have equal access to online information and services.</p>
+                    </article>
+                    <article class="aboutTextContainer innovation">
+                        <div class="flexContainer">
+                            <p class="number">02</p>
+                            <h3>Innovation</h3>
+                        </div>
+                        <p>Passionate about innovation in web development. Skilled in leveraging cutting-edge tools and frameworks to develop dynamic, high-performing websites and applications that push the boundaries of what's possible on the web.</p>
+                    </article>
+                    <article class="connection">
+                        <div class="flexContainer">
+                            <p class="number">03</p>
+                            <h3>Connection</h3>
+                        </div>
+                        <p>Valuing meaningful connections with colleagues, with a proven ability to build positive, collaborative relationships that foster a supportive and productive work environment. </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER SECTION -->
+<footer>
+    <div class="flexContainer wrapper footerFlex">
+        <div class="flexContainer footerLeft">
+            <!-- LOGO -->
+            <div class="flexContainer logo">
+                <figure>
+                    <img src="./assets/logo.png" alt="logo with multiple box outlines the overlap one another">
                 </figure>
                 <p>KB</p>
             </div>
-            <!-- NAVIGATION MENU -->
-            <nav id="navMenu" class="navMenu" aria-label="Navigation Menu">
-                <!-- nav UL -->
-                <ul class="navFlex">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><button><a href="#contact">Let's Talk</a></button></li>
-                    <li><a href="https://github.com/kenziebburke">GH</a></li>
-                    <li><a href="https://www.linkedin.com/in/kenzieburke/">LI</a></li>
-                    <li><a href="https://calendly.com/kenzieburkecodes">C</a></li>
-                </ul>
-            </nav>
+            <p>Toronto, Ontario</p>
+            <ul class="socialsLinks footerSocials">
+                <li class="circle">
+                    <a href="https://github.com/kenziebburke" target="_blank">
+                        GH 
+                        <span class="sr-only">link to github opens in new tab</span>
+                    </a>
+                </li>
+                <li class="circle">
+                    <a href="https://www.linkedin.com/in/kenzieburke/ " target="_blank">
+                        LI
+                        <span class="sr-only">link to linkedin opens in new tab</span>
+                    </a>
+                </li>
+                <li class="circle">
+                    <a href="https://calendly.com/kenzieburkecodes" target="_blank">
+                        C
+                        <span class="sr-only">link to calendly opens in new tab</span>
+                    </a>
+                </li>
+            </ul>
         </div>
-
-        <div class="wrapper flexContainer hero">
-            <!-- HEADER TITLE -->
-            <article class="flexContainer headerTitle">
-                <h1>Kenzie Burke</h1>
-                <p>Web Developer & Graphic Designer</p>
-                <figure>
-                    <!-- add alt text -->
-                    <img src="./assets/diamond.png" alt="">
-                </figure>
-            </article><!-- .end of headerTitle -->
-            <!-- HEADER IMG -->
-            <figure>
-                <img src="./assets/headshot.jpg" alt="Black and white portrait of a girl with short blond hair smiling">
-            </figure>
-        </div> <!-- .end of hero -->
-    </header>
-
-    <main>
-        <!-- SKILLS SECTION -->
-        <section class="skills">
-            <div class="wrapper">
-                <!-- TECH SKILLS -->
-                <div class="flexContainer">
-                    <p>Tech Stack</p>
-                    <ul class="tech">
-                        <li class="flexContainer">
-                            <img src="./assets/icons/icons8-html-50.svg" alt="HTML icon">
-                            <p>HTML 5</p>
-                        </li>
-                        <li class="flexContainer">
-                            <img src="./assets/icons/icons8-css-50.svg" alt="CSS icon">
-                            <p>CSS3</p>
-                        </li>
-                        <li class="flexContainer">
-                            <img src="./assets/icons/icons8-git-50.svg" alt="Github icon">
-                            <p>Github</p>
-                        </li>
-                        <li class="flexContainer">
-                            <img src="./assets/icons/icons8-code-50.svg" alt="Code icon">
-                            <p>Vs Code</p>
-                        </li>
-                        <li class="flexContainer">
-                            <img src="./assets/icons/icons8-sass-avatar-50.svg" alt="SASS icon">
-                            <p>SASS</p>
-                        </li>
-                        <li class="flexContainer">
-                            <img src="./assets/icons/icons8-js-50.svg" alt="Javascript icon">
-                            <p>Javascript</p>
-                        </li>
-                        <li class="flexContainer">
-                            <img src="./assets/icons/icons8-react-50.svg" alt="React icon">
-                            <p>React</p>
-                        </li>
-                        <li class="flexContainer">
-                            <img src="./assets/icons/icons8-firebase-a-google's-mobile-platform-that-helps-you-quickly-develop-high-quality-apps-50.svg" alt="Firebase icon">
-                            <p>Firebase</p>
-                        </li>
-                        <li class="flexContainer">
-                            <img src="./assets/icons/icons8-rest-api-50.svg" alt="RESTful API icon">
-                            <p>Restful APIs</p>
-                        </li>
-                    </ul>
-                </div><!-- end of tech .flexContainer -->
-
-                <!-- SOFT SKILLS -->
-                <div class="flexContainer">
-                    <p>Soft skills</p>
-                    <ul class="soft">
-                        <li class="flexContainer">
-                            <!-- add alt text -->
-                            <img src="./assets/icons/peer.svg" alt="">
-                            <article class="flexContainer">
-                                <h3>Peer programming</h3>
-                                <p>Git hub, communication, collaboration.</p>
-                            </article>
-                        </li>
-                        <li class="flexContainer">
-                            <!-- add alt text -->
-                            <img src="./assets/icons/design.svg" alt="">
-                            <article class="flexContainer">
-                                <h3>Design</h3>
-                                <p>Illistrator, Photoshop, Premier Pro, Animate Procreate, Rhino, Grasshopper.</p>
-                            </article>
-                        </li>
-                        <li class="flexContainer">
-                            <!-- add alt text -->
-                            <img src="./assets/icons/accessibility.svg" alt="">
-                            <article class="flexContainer">
-                                <h3>Accessible design</h3>
-                                <p>WCAG, best practices, inclusivity forward. </p>
-                            </article>
-                        </li>
-                        <li class="flexContainer">
-                            <!-- add alt text -->
-                            <img src="./assets/icons/scope.svg" alt="">
-                            <article class="flexContainer">
-                                <h3>Scope management</h3>
-                                <p>MVP maintenance, stretch goal planning, time management.</p>
-                            </article>
-                        </li>
-                    </ul>
-                </div><!-- end of soft .flexContainer -->
-            </div><!-- end of .wrapper -->
-        </section>
-
-        <!-- PROJECTS SECTION -->
-        <section id="projects" class="projects">
-            <div class="wrapper flexContainer">
-                <h2>Featured Work</h2>
-                <div class="flexContainer comfortJournal">
-                    <figure>
-                        <img src="./assets/comfortjournal.jpg" alt="Rendering of a screen grab from Comfort Journal webpage, on the left is a tree and on the right title comfort journal with date and squiggle lines">
-                    </figure>
-                    <div class="flexContainer">
-                        <p>Comfort Journal</p>
-                        <p>2023</p>
-                        <button>
-                            <i class="fa fa-angle-down" aria-hidden="true"></i>
-                        </button>
-                    </div>
-                    <article>
-                        <!-- insert text pertaining to project here -->
-                        <!-- inset icon with 01 -->
-                        <!-- insert sr only text explaining the drop down -->
-                        <p></p>
-                    </article>
-                    <div class="flexContainer">
-                        <div class="flexContainer shoeKloset">
-                            <figure>
-                                <!-- insert img here -->
-                                <img src="./assets/shoekloset.jpg" alt="Rendering of a screen grab from Shoe Kloset webpage, on the left is the title of shoe kloset and text find something new and on the right is legs wearing sneakers">
-                            </figure>
-                            <div class="flexContainer">
-                                <p>Shoe Kloset</p>
-                                <p>2023</p>
-                                <button>
-                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                </button>
-                            </div>
-                            <article>
-                                <!-- insert text pertaining to project here -->
-                                <!-- inset icon with 01 -->
-                                <!-- insert sr only text explaining the drop down -->
-                                <p></p>
-                            </article>
+        <!-- NAVIGATION MENU -->
+        <nav id="navMenu" class="navMenu" aria-label="Navigation Menu">
+            <!-- nav UL -->
+            <ul class="footerNavFlex">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li>
+                    <a href="#contact" class="button buttonTen" target="_blank">
+                        <span class="sr-only">Link will open to contact section</span>
+                        <div class="buttonInnerText">
+                            Let's talk
                         </div>
-                        <div class="flexContainer arora">
-                            <figure>
-                                <!-- insert img here -->
-                                <img src="./assets/arora.jpg" alt="Rendering of a screen grab from Arora webpage, on the left is the title of Arora and on the right is a woman wearing a large chain">
-                            </figure>
-                            <div class="flexContainer">
-                                <p>Arora</p>
-                                <p>2023</p>
-                                <button>
-                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                </button>
-                            </div>
-                            <article>
-                                <!-- insert text pertaining to project here -->
-                                <!-- inset icon with 01 -->
-                                <!-- insert sr only text explaining the drop down -->
-                                <p></p>
-                            </article>
+                        <div class="buttonHover buttonHoverTen">
+                            <span class="sr-only">This second link is for styling purposes</span>
+                            Let's talk
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <figure class="footerDiamond">
+            <img src="./assets/diamond.png" alt="logo of a diamond cross-sectioned into for portions filled in black on one quarter and lined on another.">
+        </figure>
+    </div>
+</footer>
 
-    <!-- FOOTER SECTION -->
-    <footer>
-
-    </footer>
-
-    <!-- LINK TO JS FILE -->
+<!-- LINK TO JS FILE -->
+<script src="./app.js"></script>
 
 </body>
 </html>

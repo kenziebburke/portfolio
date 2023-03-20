@@ -1,0 +1,72 @@
+@use './mixins' as *;
+
+// CONTACT
+.contact{
+    margin: 80px 0;
+    position: relative;
+    p{
+        text-transform: uppercase;
+    }
+    h2{
+        font-size: clamp(2rem, 2vw, 3rem);
+        padding-bottom: 10rem;
+    }
+}
+
+.contactContainer{
+    position: relative;
+}
+
+.contactContainer::before{
+    @include borderAnim;
+    bottom: -50px;
+}
+
+.contactTitle{
+    flex-basis: 35%;
+    margin-right: 5%;
+    position: relative;
+    .resume{
+        width: 83px;
+    }
+}
+
+.contactTitle::after{
+    @include borderAnimDown;
+    right: -30px;
+}
+
+.contactSocials{
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+    padding: 5px 0 30px 0;
+}
+
+.contact{
+    form{
+        flex-basis: 60%;
+        flex-direction: column;
+        padding-top: 60px;
+        input{
+            background-color: inherit;
+            color: black;
+            border: none;
+            border-bottom: 1px solid black;
+            margin-bottom: 50px;
+        }
+
+        textarea{
+            resize: none;
+            height: 200px;
+            border: none;
+            border-bottom: 1px solid black;
+            background-color: inherit;
+            margin-bottom: 20px;
+        }
+
+        button{
+            width: 75px;
+        }
+    }
+}

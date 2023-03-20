@@ -1,0 +1,127 @@
+@use './mixins' as *;
+
+// PROJECTS SECTION
+.projects{
+    margin: 80px 0;
+}
+
+.projectsContainer{
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.projectsContainer::before{
+    @include borderAnim;
+    bottom: -50px;
+}
+
+.projectsTitle{
+    flex-basis: 35%;
+    margin-right: 5%;
+    height: 100%;
+    z-index: 10;
+    position: sticky;
+    top: 3rem;
+    h2{
+        font-size: clamp(2rem,2vw,3rem);
+        padding-bottom: 10px;
+    }
+    p{
+        width: 70%;
+    }
+}
+
+.featuredProjects{
+    flex-direction: column;
+    flex-basis: 60%;
+    img{
+        border-radius: 10px;
+    }
+    .projectInfo{
+        justify-content: space-between;
+        width: 100%;
+        .projectExpand{
+            button{
+                background-color: inherit;
+                border: none;
+                .fa{
+                    font-size: 1.3rem;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+#journalDDClose,
+#klosetDDClose,
+#aroraDDClose{
+    display: none;
+}
+
+// clean up this code here use a mixin
+.dropDownComfort{
+    display: none;
+    .textDD{
+        margin: 10px 0;
+    }
+    .buttonDD{
+        justify-content: space-evenly;
+        .live{
+            margin-right: 2%;
+        }
+    }
+}
+
+.dropDownKloset{
+    display: none;
+    width: 200%;
+    .textDD{
+        margin: 10px 0;
+    }
+    .buttonDD{
+        justify-content: space-evenly;
+        .live{
+            margin-right: 2%;
+        }
+    }
+}
+
+.dropDownArora{
+    display: none;
+    width: 200%;
+    position: relative;
+    right: 100%;
+    .textDD{
+        margin: 10px 0;
+    }
+    .buttonDD{
+        justify-content: space-evenly;
+        .live{
+            margin-right: 2%;
+        }
+    }
+}
+
+.ddShown{
+    display: block;
+}
+
+
+.comfortJournal{
+    margin-bottom: 5%;
+}
+
+.shoeKloset{
+    flex-basis: 48.5%;
+    margin-right: 3%;
+}
+
+.arora{
+    flex-basis: 48.5%;
+}
+
+
+
+// add in borders ever where 
+// add in cursor feature over images 

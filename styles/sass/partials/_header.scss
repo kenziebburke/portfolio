@@ -1,0 +1,113 @@
+@use './mixins' as *;
+
+// NAVIGATION MENU STYLING
+.headerNav{
+    display: flex;
+    justify-content: space-between;
+    margin: 60px auto 40px auto;
+    position: relative;
+
+    .logo{
+        display: flex;
+        flex-basis: 45%;
+        figure{
+            margin-top: -10px;
+        }
+        p{
+            margin-left: 10px;
+            font-weight: bold;
+        }
+    }
+
+    nav{
+        flex-basis: 40%;
+    }
+
+    .navFlex{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 3%;
+        border-right: 1px solid black;
+        a{
+            line-height: 32px;
+        }
+        button{
+            padding: 2px 6px;
+        }
+    }
+    .navIcons{
+        display: none;
+    }
+
+    .socialsLinks{
+        flex-basis: 13%;
+        justify-content: space-between
+    }
+}
+
+.circle{
+    a{
+        line-height: 32px;
+        @include circle;
+    }
+    a:hover,
+    a:focus{
+        color: #fdfbf5;
+        @include circle;
+        background-color: #000;
+    }
+}
+
+.headerNav::before{
+    @include borderAnim;
+}
+
+@keyframes border_anim {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 100%;
+	}
+}
+
+
+// HEADER HERO STYLING
+.hero{
+    padding: 40px 0;
+    position: relative;
+    .headerTitle{
+        flex-direction: column;
+        flex-basis: 50%;
+        margin-right: 5%;
+        h1{
+            font-size: clamp(3rem, 2vw, 4rem);
+            padding-bottom: 5px;
+        }
+        p{
+            font-size: clamp(1rem, 2vw, 1.5rem);
+            padding-bottom: 250px;
+        }
+        figure{
+            height: 50px;
+            width: 50px;
+            img{
+                transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg);
+                transform-style: preserve-3d;
+                opacity: 1;
+                // check here
+            }
+        }
+    }
+    figure{
+        flex-basis: 45%;
+        height: 100%;
+        img{
+            border-radius: 15px;
+        }
+    }
+}
+
+.hero::before{
+    @include borderAnim;
+}

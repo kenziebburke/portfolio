@@ -1,10 +1,12 @@
 @use './partials/setup';
 @use './partials/baseStyles';
 @use './partials/typography';
-@use './partials/variables';
 @use './partials/mixins';
 @use './partials/header';
-@use './partials/main';
+@use './partials/skillsSection';
+@use './partials/projectsSection';
+@use './partials/contactSection';
+@use './partials/aboutSection';
 @use './partials/footer';
 @use './partials/mediaQueries';
 

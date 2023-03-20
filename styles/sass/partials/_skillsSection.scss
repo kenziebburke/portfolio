@@ -1,0 +1,110 @@
+@use './mixins' as *;
+
+
+// SKILLS SECTION
+// skills top
+.skills{
+    margin-top: 80px;
+    .tech{
+        position: relative;
+    }
+
+    .techStack
+    {
+        flex-basis: 25%;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .techStack::after{
+        @include borderAnimDown;
+    }
+
+    @keyframes border_anim_Down {
+        0%{
+            height: 0%;
+        }
+        100%{
+            height: 100%;
+        }
+    }
+
+    .techSkills{
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-basis: 75%;
+        p{
+            font-size: 0.6rem;
+            text-align: center;
+        }
+    }
+
+    figure{
+        height: 70px;
+        width: 70px;
+    }
+}
+
+.tech::before{
+    @include borderAnim;
+    bottom: -50px;
+}
+
+@keyframes border_anim {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 100%;
+	}
+}
+
+// skills bottom
+.soft{
+    margin-top: 80px;
+    position: relative;
+    .softSkillsP{
+        position: relative;
+        flex-basis: 35%;
+        padding-right: 5%;
+        text-transform: uppercase;
+        // DONT FORGET TO ADD BORDER ANIMATION HERE!
+    }
+    .softSkillsP::after{
+        @include borderAnimDown;
+    }
+    .softUl{
+        flex-basis: 70%;
+        flex-wrap: wrap;
+        h3{
+            text-transform: uppercase;
+        }
+        p{
+            text-transform: none;
+        }
+        .softSkills {
+            flex-basis: 40%;
+            min-width: 85px;
+            padding-right: 10%;
+            text-transform: uppercase;
+        }
+        .triangles{
+            flex-basis: 60%;
+        }
+        .flexContainer{
+            flex-basis: 49%;
+        }
+        .peer,
+        .accessibility{
+            margin-right: 5%;
+        }
+        .top{
+            padding-bottom: 60px;
+        }
+        .top::before{
+            @include borderAnim;
+        }
+    }
+}
+
+// DONT FORGET TO ADD SKILLS BORDERS EVERYWHERE
