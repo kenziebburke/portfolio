@@ -272,31 +272,24 @@ ul {
   display: flex;
 }
 
-button {
+.buttonNav {
   background-color: #000;
   border: 1px solid #000;
   border-radius: 5px;
   position: relative;
-  overflow: hidden;
   padding: 5px 8px;
+  display: inherit;
+  position: relative;
 }
 
-button:hover,
-button:focus {
+.buttonNav:hover,
+.buttonNav:focus {
   cursor: pointer;
 }
 
-/*button:before (attr data-hover)*/
-button:hover::before,
-button:focus::before {
-  opacity: 1;
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-}
-
-button::before {
-  content: attr(data-hover);
+.buttonHover {
   position: absolute;
+  top: 0;
   left: 0;
   width: 100%;
   opacity: 0;
@@ -306,18 +299,23 @@ button::before {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-transform: uppercase;
-  top: 2 px;
+}
+
+.hoverAnim {
+  -webkit-transform: translate(1%, 0);
+          transform: translate(1%, 0);
+  opacity: 1;
 }
 
 /*button div (button text before hover)*/
-button:hover div,
-button:focus div {
+.buttonNav:hover .buttonInnerText,
+.buttonNav:focus .buttonInnerText {
   opacity: 0;
   -webkit-transform: translate(100%, 0);
           transform: translate(100%, 0);
 }
 
-button div {
+.buttonNav .buttonInnerText {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: #fdfbf5;
@@ -836,6 +834,9 @@ input, label, textarea {
   margin-right: 5%;
   position: relative;
 }
+.contactTitle .resume {
+  width: 23%;
+}
 
 .contactTitle::after {
   content: "";
@@ -884,7 +885,10 @@ input, label, textarea {
   margin-bottom: 20px;
 }
 .contact form button {
-  width: 30%;
+  width: 15%;
+}
+.contact form button div {
+  text-align: center;
 }
 
 .about h2 {

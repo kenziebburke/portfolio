@@ -14,13 +14,12 @@
     border:1px solid #000;
     border-radius: 5px;
     position: relative;
-    overflow: hidden;
     padding: 5px 8px;
 }
 
 @mixin buttonAnim{
-    content: attr(data-hover);
     position: absolute;
+    top: 5px;
     left: 0;
     width: 100%;
     opacity: 0;

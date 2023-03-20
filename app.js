@@ -99,4 +99,46 @@ window.onbeforeunload = () => {
     form.reset();
 }
 
+
+// BUTTON ANIM==========================================
+const button = document.querySelector('.buttonNav');
+const buttonHover = document.querySelector('.buttonHover');
+
+// this.data = [];
+
+// button.forEach(button => {
+//     button.addEventListener('mouseover', (index) => {
+//         this.data.push(index);
+
+//         if(index.target.className == 'buttonNav'){
+//             buttonHover.classList.add('hoverAnim');
+//         }
+//     }, this);
+
+//     button.addEventListener('mouseout', (index) => {
+//         this.data.push(index);
+
+//         if(index.target.className == 'buttonNav'){
+//             buttonHover.classList.remove('hoverAnim');
+//         }
+//     }, this);
+
+// });
+
+
+
+const buttonAnim = (event) => {
+    if (event.type == 'mouseover')
+    {
+        buttonHover.classList.add('hoverAnim');
+    }
+    if(event.type == 'mouseout'){
+        buttonHover.classList.remove('hoverAnim');
+    }
+}
+
+button.onmouseover = button.onmouseout = buttonAnim;
+
+
+
 // ANIMATE ON SCROLL==================================================

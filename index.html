@@ -39,13 +39,16 @@
                 <li class="hamBorder"><a href="#skills">Skills</a></li>
                 <li class="hamBorder"><a href="#projects">Projects</a></li>
                 <li>
-                    <button data-hover="Let's Talk">
-                        <a href="#contact">
-                            <div class="buttonInnerText">
-                                Let's talk
-                            </div>
-                        </a>
-                    </button>
+                    <a href="#contact" class="buttonNav" target="_blank">
+                        <span class="sr-only">Link will open to contact section</span>
+                        <div class="buttonInnerText">
+                            Let's talk
+                        </div>
+                        <div class="buttonHover">
+                            <span class="sr-only">This second link is for styling purposes</span>
+                            Let's talk
+                        </div>
+                    </a>
                 </li>
             </ul>
             <button class="navIcons">
@@ -226,8 +229,12 @@
                                 <span class="sr-only">link to comfort journal opens in new tab</span>
                                 Comfort Journal</a>
                             <button class="projectExpandComfort">
-                                <i id="journalDDOpen" class="fa fa-angle-down" aria-hidden="true"></i>
-                                <i id="journalDDClose" class="fa fa-angle-up" aria-hidden="true"></i>
+                                <i id="journalDDOpen" class="fa fa-angle-down" aria-hidden="true">
+                                    <span class="sr-only">Open Comfort Journal drop down information menu</span>
+                                </i>
+                                <i id="journalDDClose" class="fa fa-angle-up" aria-hidden="true">
+                                    <span class="sr-only">Close Comfort Journal drop down information menu</span>
+                                </i>
                             </button>
                         </div>
                         <p>2023</p>
@@ -239,22 +246,26 @@
                             <p>Comfort Journal was a collaborative project.  My partner and I designed a live journaling system using HTML, SCSS, and JavaScript, with realtime data storage on Firebase. The system was designed to provide a user-friendly and engaging experience, with each entry automatically timestamped with the date. To inspire users, we implemented a feature that randomly populates quotes on page load and an image carousel to spark creativity. Using Git collaboration and peer programming techniques, we were able to work together seamlessly, allowing for efficient and effective development.</p>
                         </div>
                         <div class="flexContainer buttonDD">
-                            <button data-hover="Live" class="live"> 
-                                    <a href="https://comfortjournal.netlify.app/" target="_blank"> 
-                                        <span class="sr-only">link to comfort journal opens in new tab</span>
-                                        <div>
-                                            Live
-                                        </div>
-                                        </a>
-                            </button>
-                            <button data-hover="Repo">
-                                    <a href="https://github.com/paigethai/Project02ComfortJournal/branches" target="_blank">
-                                        <span class="sr-only">link to comfort journal opens in new tab</span>
-                                        <div>
-                                            Repo
-                                        </div>
-                                        </a>
-                            </button>
+                            <a href="https://comfortjournal.netlify.app/" class="buttonNav live" target="_blank">
+                                <span class="sr-only">Link will open to new tab with featuring Shoe Kloset live site</span>
+                                <div class="buttonInnerText">
+                                    Live
+                                </div>
+                                <div class="buttonHover">
+                                    <span class="sr-only">This second link is for styling purposes</span>
+                                    Live
+                                </div>
+                            </a>
+                            <a href="https://github.com/paigethai/Project02ComfortJournal/branches" class="buttonNav" target="_blank">
+                                <span class="sr-only">Link will open to new tab with featuring comfort journal repo</span>
+                                <div class="buttonInnerText">
+                                    Repo
+                                </div>
+                                <div class="buttonHover">
+                                    <span class="sr-only">This second link is for styling purposes</span>
+                                    Repo
+                                </div>
+                            </a>
                         </div>
                     </aside>
                 </div>
@@ -269,10 +280,15 @@
                         <div class="flexContainer projectInfo">
                             <div class="projectExpand">
                                 <a href="https://devkenziebbprojectone.netlify.app/" target="_blank">
-                                    <span class="sr-only">link to shoe kloset opens in new tab</span> Shoe Kloset </a>
+                                    <span class="sr-only">link to shoe kloset opens in new tab</span> Shoe Kloset 
+                                </a>
                                 <button class="projectExpandKloset">
-                                    <i id="klosetDDOpen" class="fa fa-angle-down" aria-hidden="true"></i>
-                                    <i id="klosetDDClose" class="fa fa-angle-up" aria-hidden="true"></i>
+                                    <i id="klosetDDOpen" class="fa fa-angle-down" aria-hidden="true">
+                                        <span class="sr-only">Open Shoe Kloset drop down information menu</span>
+                                    </i>
+                                    <i id="klosetDDClose" class="fa fa-angle-up" aria-hidden="true">
+                                        <span class="sr-only">Close Shoe Kloset drop down information menu</span>
+                                    </i>
                                 </button>
                             </div>
                             <p>2023</p>
@@ -286,21 +302,26 @@
                             </div>
                             <div class="flexContainer buttonDD">
                                 <!-- deploy main branch to site on netlify -->
-                                <button data-hover="Live" class="live"> 
-                                        <a href="https://devkenziebbprojectone.netlify.app/" target="_blank"> 
-                                            <span class="sr-only">link to shoe kloset opens in new tab</span>
-                                            <div>
-                                                Live
-                                            </div>
-                                        </a>
-                                </button>
-                                <button data-hover="Repo" class="repo">
-                                        <a href="https://github.com/kenziebburke/kenzieBurkeProjectOne" target="_blank">
-                                            <span class="sr-only">link to shoe kloset opens in new tab</span>
-                                            <div>
-                                                Repo
-                                            </div></a>
-                                </button>
+                                <a href="https://devkenziebbprojectone.netlify.app/" class="buttonNav live" target="_blank">
+                                    <span class="sr-only">Link will open to new tab with featuring Shoe Kloset live site</span>
+                                    <div class="buttonInnerText">
+                                        Live
+                                    </div>
+                                    <div class="buttonHover">
+                                        <span class="sr-only">This second link is for styling purposes</span>
+                                        Live
+                                    </div>
+                                </a>
+                                <a href="https://github.com/kenziebburke/kenzieBurkeProjectOne" class="buttonNav repo" target="_blank">
+                                    <span class="sr-only">Link will open to new tab with featuring Shoe Kloset repo</span>
+                                    <div class="buttonInnerText">
+                                        Repo
+                                    </div>
+                                    <div class="buttonHover">
+                                        <span class="sr-only">This second link is for styling purposes</span>
+                                        Repo
+                                    </div>
+                                </a>
                             </div>
                         </aside>
                     </div>
@@ -312,8 +333,12 @@
                             <div class="projectExpand">
                                 <a href="">Arora</a>
                                 <button class="projectExpandArora">
-                                    <i id="aroraDDOpen" class="fa fa-angle-down" aria-hidden="true"></i>
-                                    <i id="aroraDDClose" class="fa fa-angle-up" aria-hidden="true"></i>
+                                    <i id="aroraDDOpen" class="fa fa-angle-down" aria-hidden="true">
+                                        <span class="sr-only">Open Arora drop down information menu</span>
+                                    </i>
+                                    <i id="aroraDDClose" class="fa fa-angle-up" aria-hidden="true">
+                                        <span class="sr-only">Close Arora drop down information menu</span>
+                                    </i>
                                 </button>
                             </div>
                             <p>2023</p>
@@ -325,22 +350,26 @@
                                 <p>Arora is a project where I converted a PSD file into a fully accessible and responsive website using HTML and CSS. In addition to ensuring the website's design accurately matched the PSD file, I made sure that the website was built with accessibility in mind.  I also implemented responsive design techniques, allowing the website to adapt to different screen sizes and devices. To make sure the code was easy to maintain and update, I followed the DRY principle, eliminating redundant code and organizing the CSS using modular and reusable components.</p>
                             </div>
                             <div class="flexContainer buttonDD">
-                                <button data-hover="Live" class="live">
-                                        <a href="" target="_blank"> 
-                                            <span class="sr-only">link to arora opens in new tab</span>
-                                            <div>
-                                                Live
-                                            </div>
-                                        </a>
-                                </button>
-                                <button data-hover="Repo" class="repo">
-                                        <a href="" target="_blank">
-                                            <span class="sr-only">link to arora opens in new tab</span>
-                                            <div>
-                                                Repo
-                                            </div>
-                                        </a>
-                                </button>
+                                <a href="" class="buttonNav live" target="_blank">
+                                    <span class="sr-only">Link will open to new tab with featuring Arora live site</span>
+                                    <div class="buttonInnerText">
+                                        Live
+                                    </div>
+                                    <div class="buttonHover">
+                                        <span class="sr-only">This second link is for styling purposes</span>
+                                        Live
+                                    </div>
+                                </a>
+                                <a href="" class="buttonNav repo" target="_blank">
+                                    <span class="sr-only">Link will open to new tab with featuring Arora repo</span>
+                                    <div class="buttonInnerText">
+                                        Repo
+                                    </div>
+                                    <div class="buttonHover">
+                                        <span class="sr-only">This second link is for styling purposes </span>
+                                        Repo
+                                    </div>
+                                </a>
                             </div>
                         </aside>
                     </div><!-- end of flexContainer arora -->
@@ -376,14 +405,16 @@
                         </a>
                     </li>
                 </ul>
-                <button data-hover="Resume" class="resume">
-                    <a href="//www.canva.com/design/DAFa36Opw6s/ITSbmY6g1R7UTx0TdzJsig/view?utm_content=DAFa36Opw6s&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">
-                        <span class="sr-only">link to resume opens in new tab</span>
-                        <div>
-                            Resume
-                        </div>
-                    </a>
-                </button>
+                <a href="//www.canva.com/design/DAFa36Opw6s/ITSbmY6g1R7UTx0TdzJsig/view?utm_content=DAFa36Opw6s&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" class="buttonNav resume" target="_blank">
+                    <span class="sr-only">Link will open to new tab with featuring Kenzie Burke's resume</span>
+                    <div class="buttonInnerText">
+                        Resume
+                    </div>
+                    <div class="buttonHover">
+                        <span class="sr-only">This second link is for styling purposes </span>
+                        Resume
+                    </div>
+                </a>
             </div>
             <form action="https://formspree.io/f/xjvdebpd" method="POST" class="contactForm flexContainer" name="contactForm">
                 <!-- name input -->
@@ -399,10 +430,14 @@
                 <label for="message">Your Message</label>
                 <textarea name="message" id="message" required="true" minlength="5"></textarea>
 
-                <button id="submitForm" data-hover="Submit" type="submit">
-                        <div>
-                            SUBMIT
-                        </div>
+                <button id="submitForm" type="submit" class="buttonNav">
+                    <div class="buttonInnerText">
+                        SUBMIT
+                    </div>
+                    <div class="buttonHover">
+                        <span class="sr-only">This second "submit" is for styling purposes </span>
+                        SUBMIT
+                    </div>
                 </button>
             </form>
         </div>
@@ -485,13 +520,16 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li>
-                    <button data-hover="Let's talk">
-                        <a href="#contact">
-                            <div class="buttonInnerText">
-                                Let's talk
-                            </div>
-                        </a>
-                    </button>
+                    <a href="#contact" class="buttonNav" target="_blank">
+                        <span class="sr-only">Link will open to contact section</span>
+                        <div class="buttonInnerText">
+                            Let's talk
+                        </div>
+                        <div class="buttonHover">
+                            <span class="sr-only">This second link is for styling purposes</span>
+                            Let's talk
+                        </div>
+                    </a>
                 </li>
             </ul>
         </nav>

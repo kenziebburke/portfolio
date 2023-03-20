@@ -45,35 +45,43 @@ ul{
 }
 
 
-button{
+.buttonNav{
     @include button;
+    display: inherit;
+    position: relative;
 }
 
-button:hover,
-button:focus{
+.buttonNav:hover,
+.buttonNav:focus{
     cursor: pointer
 }
 
-/*button:before (attr data-hover)*/
-button:hover::before,
-button:focus::before{
-    opacity: 1; 
-    transform: translate(0,0);
+
+.buttonHover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    color:#fdfbf5;
+    transform: translate(-100%,0);
+    transition: all .3s ease-in-out;
+    text-transform: uppercase;
 }
 
-button::before{
-    @include buttonAnim;
-    top: 2 px; 
+.hoverAnim{
+    transform: translate(1%,0);
+    opacity: 1;
 }
 
 /*button div (button text before hover)*/
-button:hover div,
-button:focus div{
+.buttonNav:hover .buttonInnerText,
+.buttonNav:focus .buttonInnerText{
     opacity: 0; 
     transform: translate(100%,0)
 }
 
-button div{
+.buttonNav .buttonInnerText{
     transition: all .3s ease-in-out;
     color: #fdfbf5;
 }
