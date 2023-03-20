@@ -68,7 +68,6 @@
         flex-basis: 35%;
         padding-right: 5%;
         text-transform: uppercase;
-        // DONT FORGET TO ADD BORDER ANIMATION HERE!
     }
     .softSkillsP::after{
         @include borderAnimDown;
@@ -106,5 +105,3 @@
         }
     }
 }
-
-// DONT FORGET TO ADD SKILLS BORDERS EVERYWHERE
