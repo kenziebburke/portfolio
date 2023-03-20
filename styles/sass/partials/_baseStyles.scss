@@ -45,21 +45,25 @@ ul{
 }
 
 
-.buttonNav{
-    @include button;
+.button{
+    background-color: #000;
+    border:1px solid #000;
+    border-radius: 5px;
+    position: relative;
+    padding: 5px 8px;
     display: inherit;
     position: relative;
 }
 
-.buttonNav:hover,
-.buttonNav:focus{
+.button:hover,
+.button:focus{
     cursor: pointer
 }
 
 
 .buttonHover{
     position: absolute;
-    top: 0;
+    top: 5px;
     left: 0;
     width: 100%;
     opacity: 0;
@@ -70,18 +74,18 @@ ul{
 }
 
 .hoverAnim{
-    transform: translate(1%,0);
+    transform: translate(8%,0);
     opacity: 1;
 }
 
 /*button div (button text before hover)*/
-.buttonNav:hover .buttonInnerText,
-.buttonNav:focus .buttonInnerText{
+.button:hover .buttonInnerText,
+.button:focus .buttonInnerText{
     opacity: 0; 
     transform: translate(100%,0)
 }
 
-.buttonNav .buttonInnerText{
+.button .buttonInnerText{
     transition: all .3s ease-in-out;
     color: #fdfbf5;
 }

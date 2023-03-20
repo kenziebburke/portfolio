@@ -101,44 +101,153 @@ window.onbeforeunload = () => {
 
 
 // BUTTON ANIM==========================================
-const button = document.querySelector('.buttonNav');
-const buttonHover = document.querySelector('.buttonHover');
+const buttonOne = document.querySelector('.buttonOne');
+const buttonHoverOne = document.querySelector('.buttonHoverOne');
 
-// this.data = [];
+const buttonTwo = document.querySelector('.buttonTwo');
+console.log(buttonTwo)
+const buttonHoverTwo = document.querySelector('.buttonHoverTwo');
 
-// button.forEach(button => {
-//     button.addEventListener('mouseover', (index) => {
-//         this.data.push(index);
+const buttonThree = document.querySelector('.buttonThree');
+const buttonHoverThree = document.querySelector('.buttonHoverThree');
 
-//         if(index.target.className == 'buttonNav'){
-//             buttonHover.classList.add('hoverAnim');
-//         }
-//     }, this);
+const buttonFour = document.querySelector('.buttonFour');
+const buttonHoverFour = document.querySelector('.buttonHoverFour');
 
-//     button.addEventListener('mouseout', (index) => {
-//         this.data.push(index);
+const buttonFive = document.querySelector('.buttonFive');
+const buttonHoverFive = document.querySelector('.buttonHoverFive');
 
-//         if(index.target.className == 'buttonNav'){
-//             buttonHover.classList.remove('hoverAnim');
-//         }
-//     }, this);
+const buttonSix = document.querySelector('.buttonSix');
+const buttonHoverSix = document.querySelector('.buttonHoverSix');
 
-// });
+const buttonSeven = document.querySelector('.buttonSeven');
+const buttonHoverSeven = document.querySelector('.buttonHoverSeven');
 
+const buttonEight = document.querySelector('.buttonEight');
+const buttonHoverEight = document.querySelector('.buttonHoverEight');
 
+const buttonNine = document.querySelector('.buttonNine');
+const buttonHoverNine = document.querySelector('.buttonHoverNine');
 
-const buttonAnim = (event) => {
+const buttonTen = document.querySelector('.buttonTen');
+const buttonHoverTen = document.querySelector('.buttonHoverTen');
+
+const buttonAnimOne = (event) => {
     if (event.type == 'mouseover')
     {
-        buttonHover.classList.add('hoverAnim');
+        buttonHoverOne.classList.add('hoverAnim');
     }
     if(event.type == 'mouseout'){
-        buttonHover.classList.remove('hoverAnim');
+        buttonHoverOne.classList.remove('hoverAnim');
     }
 }
 
-button.onmouseover = button.onmouseout = buttonAnim;
+const buttonAnimTwo = (event) => {
+    if (event.type == 'mouseover')
+    {
+        buttonHoverTwo.classList.add('hoverAnim');
+    }
+    if(event.type == 'mouseout'){
+        buttonHoverTwo.classList.remove('hoverAnim');
+    }
+}
 
+const buttonAnimThree = (event) => {
+    if (event.type == 'mouseover')
+    {
+        buttonHoverThree.classList.add('hoverAnim');
+    }
+    if(event.type == 'mouseout'){
+        buttonHoverThree.classList.remove('hoverAnim');
+    }
+}
 
+const buttonAnimFour = (event) => {
+    if (event.type == 'mouseover')
+    {
+        buttonHoverFour.classList.add('hoverAnim');
+    }
+    if(event.type == 'mouseout'){
+        buttonHoverFour.classList.remove('hoverAnim');
+    }
+}
 
+const buttonAnimFive = (event) => {
+    if (event.type == 'mouseover')
+    {
+        buttonHoverFive.classList.add('hoverAnim');
+    }
+    if(event.type == 'mouseout'){
+        buttonHoverFive.classList.remove('hoverAnim');
+    }
+}
+
+const buttonAnimSix = (event) => {
+    if (event.type == 'mouseover')
+    {
+        buttonHoverSix.classList.add('hoverAnim');
+    }
+    if(event.type == 'mouseout'){
+        buttonHoverSix.classList.remove('hoverAnim');
+    }
+}
+
+const buttonAnimSeven = (event) => {
+    if (event.type == 'mouseover')
+    {
+        buttonHoverSeven.classList.add('hoverAnim');
+    }
+    if(event.type == 'mouseout'){
+        buttonHoverSeven.classList.remove('hoverAnim');
+    }
+}
+
+const buttonAnimEight = (event) => {
+    if (event.type == 'mouseover')
+    {
+        buttonHoverEight.classList.add('hoverAnim');
+    }
+    if(event.type == 'mouseout'){
+        buttonHoverEight.classList.remove('hoverAnim');
+    }
+}
+
+const buttonAnimNine = (event) => {
+    if (event.type == 'mouseover')
+    {
+        buttonHoverNine.classList.add('hoverAnim');
+    }
+    if(event.type == 'mouseout'){
+        buttonHoverNine.classList.remove('hoverAnim');
+    }
+}
+
+const buttonAnimTen = (event) => {
+    if (event.type == 'mouseover')
+    {
+        buttonHoverTen.classList.add('hoverAnim');
+    }
+    if(event.type == 'mouseout'){
+        buttonHoverTen.classList.remove('hoverAnim');
+    }
+}
+
+buttonOne.onmouseover = buttonOne.onmouseout = buttonAnimOne;
+buttonTwo.onmouseover = buttonTwo.onmouseout = buttonAnimTwo;
+buttonThree.onmouseover = buttonThree.onmouseout = buttonAnimThree;
+buttonFour.onmouseover = buttonFour.onmouseout = buttonAnimFour;
+buttonFive.onmouseover = buttonFive.onmouseout = buttonAnimFive;
+buttonSix.onmouseover = buttonSix.onmouseout = buttonAnimSix;
+buttonSeven.onmouseover = buttonSeven.onmouseout = buttonAnimSeven;
+buttonEight.onmouseover = buttonEight.onmouseout = buttonAnimEight;
+buttonNine.onmouseover = buttonNine.onmouseout = buttonAnimNine;
+buttonTen.onmouseover = buttonTen.onmouseout = buttonAnimTen;
+
+buttonOne.addEventListener('click', () => {
+    el.reset();
+})
+
+buttonTwo.addEventListener('click', (b) => {
+    buttonTwo.reset();
+})
 // ANIMATE ON SCROLL==================================================

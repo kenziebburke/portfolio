@@ -27,12 +27,13 @@
     margin-right: 5%;
     position: relative;
     .resume{
-        width: 23%;
+        width: 83px;
     }
 }
 
 .contactTitle::after{
     @include borderAnimDown;
+    right: -30px;
 }
 
 .contactSocials{
@@ -65,10 +66,7 @@
         }
 
         button{
-            width: 15%;
-            div{
-                text-align: center;
-            }
+            width: 75px;
         }
     }
 }
