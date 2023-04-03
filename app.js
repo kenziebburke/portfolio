@@ -22,6 +22,52 @@ navIcons.addEventListener("click", menuToggle);
 
 
 // DROP DOWN INFO ==================================================
+const dropDownG = document.querySelector('#galleryDD');
+const dDIconsG = document.querySelector('.projectExpandGallery');
+const openDDG = document.querySelector('#galleryDDOpen');
+const closeDDG = document.querySelector('#galleryDDClose');
+
+const dropDownToggleG = () => {
+    if (dropDownG.classList.contains("ddShown"))
+    {
+        dropDownG.classList.remove('ddShown');
+        closeDDG.style.display ='none';
+        openDDG.style.display = 'block';
+    }
+    else{
+        dropDownG.classList.add('ddShown'); 
+        dropDownK.classList.remove('ddShown');
+        dropDownC.classList.remove('ddShown');
+        closeDDG.style.display = 'block';
+        openDDG.style.display = 'none';
+    }
+}
+
+dDIconsG.addEventListener("click", dropDownToggleG);
+
+const dropDownK = document.querySelector('#klosetDD');
+const dDIconsK = document.querySelector('.projectExpandKloset');
+const openDDK = document.querySelector('#klosetDDOpen');
+const closeDDK = document.querySelector('#klosetDDClose');
+
+const dropDownToggleK = () => {
+    if (dropDownK.classList.contains("ddShown"))
+    {
+        dropDownK.classList.remove('ddShown');
+        closeDDK.style.display ='none';
+        openDDK.style.display = 'block';
+    }
+    else{
+        dropDownK.classList.add('ddShown'); 
+        dropDownG.classList.remove('ddShown')
+        dropDownC.classList.remove('ddShown');
+        closeDDK.style.display = 'block';
+        openDDK.style.display = 'none';
+    }
+}
+
+dDIconsK.addEventListener("click", dropDownToggleK);
+
 const dropDownC = document.querySelector('#journalDD');
 const dDIconsC = document.querySelector('.projectExpandComfort');
 const openDDC = document.querySelector('#journalDDOpen');
@@ -42,55 +88,6 @@ const dropDownToggle = () => {
 }
 
 dDIconsC.addEventListener("click", dropDownToggle);
-
-
-const dropDownK = document.querySelector('#klosetDD');
-const dDIconsK = document.querySelector('.projectExpandKloset');
-const openDDK = document.querySelector('#klosetDDOpen');
-const closeDDK = document.querySelector('#klosetDDClose');
-
-const dropDownToggleK = () => {
-    if (dropDownK.classList.contains("ddShown"))
-    {
-        dropDownK.classList.remove('ddShown');
-        closeDDK.style.display ='none';
-        openDDK.style.display = 'block';
-    }
-    else{
-        dropDownK.classList.add('ddShown'); 
-        dropDownA.classList.remove('ddShown')
-        dropDownC.classList.remove('ddShown');
-        closeDDK.style.display = 'block';
-        openDDK.style.display = 'none';
-    }
-}
-
-dDIconsK.addEventListener("click", dropDownToggleK);
-
-
-const dropDownA = document.querySelector('#aroraDD');
-const dDIconsA = document.querySelector('.projectExpandArora');
-const openDDA = document.querySelector('#aroraDDOpen');
-const closeDDA = document.querySelector('#aroraDDClose');
-
-const dropDownToggleA = () => {
-    if (dropDownA.classList.contains("ddShown"))
-    {
-        dropDownA.classList.remove('ddShown');
-        closeDDA.style.display ='none';
-        openDDA.style.display = 'block';
-    }
-    else{
-        dropDownA.classList.add('ddShown'); 
-        dropDownK.classList.remove('ddShown');
-        dropDownC.classList.remove('ddShown');
-        closeDDA.style.display = 'block';
-        openDDA.style.display = 'none';
-    }
-}
-
-dDIconsA.addEventListener("click", dropDownToggleA);
-
 // EMAIL ATTACHMENT==================================================
 
 const form = document.querySelector('form');
@@ -326,3 +323,23 @@ buttonTen.onmouseover = buttonTen.onmouseout = buttonAnimTen;
 
 // ANIMATE ON SCROLL==================================================
 // TBD
+
+const buttonAnimEleven = (event, buttonone) => {
+    if (event.type == 'mouseover')
+    {
+        buttonone.classList.add('hoverAnim');
+    }
+    if(event.type == 'mouseout'){
+        buttonone.classList.remove('hoverAnim');
+    }
+}
+
+// buttontwo.addEventListener("focusin", () => {
+//     buttonone.classList.add('hoverAnim');
+// });
+
+// buttontwo.addEventListener("focusout", () => {
+//     buttonone.classList.add('hoverAnim');
+// });
+
+buttonAnimEleven(buttonOne.onmouseover, buttonOne)

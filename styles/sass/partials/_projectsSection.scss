@@ -55,12 +55,12 @@
 
 #journalDDClose,
 #klosetDDClose,
-#aroraDDClose{
+#galleryDDClose{
     display: none;
 }
 
 
-.dropDownComfort{
+.dropDownGallery{
     display: none;
     .textDD{
         margin: 10px 0;
@@ -87,7 +87,7 @@
     }
 }
 
-.dropDownArora{
+.dropDownComfort{
     display: none;
     width: 200%;
     position: relative;
@@ -108,7 +108,7 @@
 }
 
 
-.comfortJournal{
+.designGallery{
     margin-bottom: 5%;
 }
 
@@ -117,7 +117,7 @@
     margin-right: 3%;
 }
 
-.arora{
+.comfortJournal{
     flex-basis: 48.5%;
 }
 
