@@ -739,22 +739,22 @@ input, label, textarea {
 
 #journalDDClose,
 #klosetDDClose,
-#aroraDDClose {
+#galleryDDClose {
   display: none;
 }
 
-.dropDownComfort {
+.dropDownGallery {
   display: none;
 }
-.dropDownComfort .textDD {
+.dropDownGallery .textDD {
   margin: 10px 0;
 }
-.dropDownComfort .buttonDD {
+.dropDownGallery .buttonDD {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
-.dropDownComfort .buttonDD .live {
+.dropDownGallery .buttonDD .live {
   margin-right: 2%;
 }
 
@@ -774,21 +774,21 @@ input, label, textarea {
   margin-right: 2%;
 }
 
-.dropDownArora {
+.dropDownComfort {
   display: none;
   width: 200%;
   position: relative;
   right: 100%;
 }
-.dropDownArora .textDD {
+.dropDownComfort .textDD {
   margin: 10px 0;
 }
-.dropDownArora .buttonDD {
+.dropDownComfort .buttonDD {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
-.dropDownArora .buttonDD .live {
+.dropDownComfort .buttonDD .live {
   margin-right: 2%;
 }
 
@@ -796,7 +796,7 @@ input, label, textarea {
   display: block;
 }
 
-.comfortJournal {
+.designGallery {
   margin-bottom: 5%;
 }
 
@@ -806,7 +806,7 @@ input, label, textarea {
   margin-right: 3%;
 }
 
-.arora {
+.comfortJournal {
   -ms-flex-preferred-size: 48.5%;
       flex-basis: 48.5%;
 }
