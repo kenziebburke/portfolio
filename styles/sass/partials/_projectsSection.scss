@@ -54,7 +54,7 @@
 }
 
 #journalDDClose,
-#klosetDDClose,
+#triviaDDClose,
 #galleryDDClose{
     display: none;
 }
@@ -73,7 +73,7 @@
     }
 }
 
-.dropDownKloset{
+.dropDownTrivia{
     display: none;
     width: 200%;
     .textDD{
@@ -112,7 +112,7 @@
     margin-bottom: 5%;
 }
 
-.shoeKloset{
+.trivialPursuit{
     flex-basis: 48.5%;
     margin-right: 3%;
 }

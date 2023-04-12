@@ -36,7 +36,7 @@ const dropDownToggleG = () => {
     }
     else{
         dropDownG.classList.add('ddShown'); 
-        dropDownK.classList.remove('ddShown');
+        dropDownT.classList.remove('ddShown');
         dropDownC.classList.remove('ddShown');
         closeDDG.style.display = 'block';
         openDDG.style.display = 'none';
@@ -45,28 +45,28 @@ const dropDownToggleG = () => {
 
 dDIconsG.addEventListener("click", dropDownToggleG);
 
-const dropDownK = document.querySelector('#klosetDD');
-const dDIconsK = document.querySelector('.projectExpandKloset');
-const openDDK = document.querySelector('#klosetDDOpen');
-const closeDDK = document.querySelector('#klosetDDClose');
+const dropDownT = document.querySelector('#triviaDD');
+const dDIconsT = document.querySelector('.projectExpandTrivia');
+const openDDT = document.querySelector('#triviaDDOpen');
+const closeDDT = document.querySelector('#triviaDDClose');
 
 const dropDownToggleK = () => {
-    if (dropDownK.classList.contains("ddShown"))
+    if (dropDownT.classList.contains("ddShown"))
     {
-        dropDownK.classList.remove('ddShown');
-        closeDDK.style.display ='none';
-        openDDK.style.display = 'block';
+        dropDownT.classList.remove('ddShown');
+        closeDDT.style.display ='none';
+        openDDT.style.display = 'block';
     }
     else{
-        dropDownK.classList.add('ddShown'); 
+        dropDownT.classList.add('ddShown'); 
         dropDownG.classList.remove('ddShown')
         dropDownC.classList.remove('ddShown');
-        closeDDK.style.display = 'block';
-        openDDK.style.display = 'none';
+        closeDDT.style.display = 'block';
+        openDDT.style.display = 'none';
     }
 }
 
-dDIconsK.addEventListener("click", dropDownToggleK);
+dDIconsT.addEventListener("click", dropDownToggleK);
 
 const dropDownC = document.querySelector('#journalDD');
 const dDIconsC = document.querySelector('.projectExpandComfort');
@@ -82,6 +82,8 @@ const dropDownToggle = () => {
     }
     else{
         dropDownC.classList.add('ddShown'); 
+        dropDownG.classList.remove('ddShown')
+        dropDownT.classList.remove('ddShown')
         closeDDC.style.display = 'block';
         openDDC.style.display = 'none';
     }
