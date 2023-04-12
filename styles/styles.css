@@ -738,7 +738,7 @@ input, label, textarea {
 }
 
 #journalDDClose,
-#klosetDDClose,
+#triviaDDClose,
 #galleryDDClose {
   display: none;
 }
@@ -758,19 +758,19 @@ input, label, textarea {
   margin-right: 2%;
 }
 
-.dropDownKloset {
+.dropDownTrivia {
   display: none;
   width: 200%;
 }
-.dropDownKloset .textDD {
+.dropDownTrivia .textDD {
   margin: 10px 0;
 }
-.dropDownKloset .buttonDD {
+.dropDownTrivia .buttonDD {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
-.dropDownKloset .buttonDD .live {
+.dropDownTrivia .buttonDD .live {
   margin-right: 2%;
 }
 
@@ -800,7 +800,7 @@ input, label, textarea {
   margin-bottom: 5%;
 }
 
-.shoeKloset {
+.trivialPursuit {
   -ms-flex-preferred-size: 48.5%;
       flex-basis: 48.5%;
   margin-right: 3%;
