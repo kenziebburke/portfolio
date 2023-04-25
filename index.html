@@ -74,26 +74,31 @@
             </i>
           </button>
         </nav>
-        <ul class="socialsLinks flexContainer">
-          <li class="circle">
-            <a href="https://github.com/kenziebburke" target="_blank">
-              GH
-              <span class="sr-only">link to github opens in new tab</span>
-            </a>
-          </li>
-          <li class="circle">
-            <a href="https://www.linkedin.com/in/kenzieburke/ " target="_blank">
-              LI
-              <span class="sr-only">link to linkedin opens in new tab</span>
-            </a>
-          </li>
-          <li class="circle">
-            <a href="https://calendly.com/kenzieburkecodes" target="_blank">
-              C
-              <span class="sr-only">link to calendly opens in new tab</span>
-            </a>
-          </li>
-        </ul>
+        <nav aria-label="socials navigation">
+            <ul class="socialsLinks flexContainer">
+                <li class="circle">
+                  <a href="https://github.com/kenziebburke" target="_blank">
+                    GH
+                    <span class="sr-only">link to github opens in new tab</span>
+                  </a>
+                </li>
+                <li class="circle">
+                  <a
+                    href="https://www.linkedin.com/in/kenzieburke/ "
+                    target="_blank"
+                  >
+                    LI
+                    <span class="sr-only">link to linkedin opens in new tab</span>
+                  </a>
+                </li>
+                <li class="circle">
+                  <a href="https://calendly.com/kenzieburkecodes" target="_blank">
+                    C
+                    <span class="sr-only">link to calendly opens in new tab</span>
+                  </a>
+                </li>
+              </ul>
+          </nav>
       </div>
 
       <div class="wrapper flexContainer hero">
@@ -680,29 +685,31 @@
             <h2>Contact</h2>
             <h3 class="creating">Creating together.</h3>
             <p>Find me on</p>
-            <ul class="contactSocials">
-              <li class="circle">
-                <a href="https://github.com/kenziebburke" target="_blank">
-                  GH
-                  <span class="sr-only">link to github opens in new tab</span>
-                </a>
-              </li>
-              <li class="circle">
-                <a
-                  href="https://www.linkedin.com/in/kenzieburke/ "
-                  target="_blank"
-                >
-                  LI
-                  <span class="sr-only">link to linkedin opens in new tab</span>
-                </a>
-              </li>
-              <li class="circle">
-                <a href="https://calendly.com/kenzieburkecodes" target="_blank">
-                  C
-                  <span class="sr-only">link to calendly opens in new tab</span>
-                </a>
-              </li>
-            </ul>
+            <nav aria-label="socials navigation">
+                <ul class="socialsLinks">
+                    <li class="circle">
+                      <a href="https://github.com/kenziebburke" target="_blank">
+                        GH
+                        <span class="sr-only">link to github opens in new tab</span>
+                      </a>
+                    </li>
+                    <li class="circle">
+                      <a
+                        href="https://www.linkedin.com/in/kenzieburke/ "
+                        target="_blank"
+                      >
+                        LI
+                        <span class="sr-only">link to linkedin opens in new tab</span>
+                      </a>
+                    </li>
+                    <li class="circle">
+                      <a href="https://calendly.com/kenzieburkecodes" target="_blank">
+                        C
+                        <span class="sr-only">link to calendly opens in new tab</span>
+                      </a>
+                    </li>
+                  </ul>
+              </nav>
           </div>
           <form
             action="https://formspree.io/f/xjvdebpd"
@@ -718,6 +725,7 @@
               name="userName"
               placeholder="Your Name"
               required="true"
+              aria-required="true"
             />
 
             <!-- email input -->
@@ -728,6 +736,7 @@
               name="email"
               placeholder="Your Email"
               required="true"
+              aria-required="true"
             />
 
             <!-- message input -->
@@ -736,6 +745,7 @@
               name="message"
               id="message"
               required="true"
+              aria-required="true"
               minlength="5"
             ></textarea>
 
@@ -819,29 +829,31 @@
             <p>KB</p>
           </div>
           <p>Toronto, Ontario</p>
-          <ul class="socialsLinks footerSocials">
-            <li class="circle">
-              <a href="https://github.com/kenziebburke" target="_blank">
-                GH
-                <span class="sr-only">link to github opens in new tab</span>
-              </a>
-            </li>
-            <li class="circle">
-              <a
-                href="https://www.linkedin.com/in/kenzieburke/ "
-                target="_blank"
-              >
-                LI
-                <span class="sr-only">link to linkedin opens in new tab</span>
-              </a>
-            </li>
-            <li class="circle">
-              <a href="https://calendly.com/kenzieburkecodes" target="_blank">
-                C
-                <span class="sr-only">link to calendly opens in new tab</span>
-              </a>
-            </li>
-          </ul>
+          <nav aria-label="socials navigation">
+            <ul class="socialsLinks footerSocials">
+                <li class="circle">
+                  <a href="https://github.com/kenziebburke" target="_blank">
+                    GH
+                    <span class="sr-only">link to github opens in new tab</span>
+                  </a>
+                </li>
+                <li class="circle">
+                  <a
+                    href="https://www.linkedin.com/in/kenzieburke/ "
+                    target="_blank"
+                  >
+                    LI
+                    <span class="sr-only">link to linkedin opens in new tab</span>
+                  </a>
+                </li>
+                <li class="circle">
+                  <a href="https://calendly.com/kenzieburkecodes" target="_blank">
+                    C
+                    <span class="sr-only">link to calendly opens in new tab</span>
+                  </a>
+                </li>
+              </ul>
+          </nav>
         </div>
         <!-- NAVIGATION MENU -->
         <nav id="navMenu" class="navMenu" aria-label="Navigation Menu">
