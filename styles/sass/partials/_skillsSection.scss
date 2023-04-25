@@ -7,6 +7,10 @@
     margin-top: 80px;
     .tech{
         position: relative;
+        h2{
+            font-size: 1rem;
+            font-family: 'Abel', sans-serif;
+        }
     }
 
     .techStack
@@ -63,6 +67,10 @@
 .soft{
     margin-top: 80px;
     position: relative;
+    h2{
+        font-size: 1rem;
+        font-family: 'Abel', sans-serif;
+    }
     .softSkillsP{
         position: relative;
         flex-basis: 35%;
