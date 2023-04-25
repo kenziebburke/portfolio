@@ -121,9 +121,6 @@ const buttonHoverSix = document.querySelector('.buttonHoverSix');
 const buttonSeven = document.querySelector('.buttonSeven');
 const buttonHoverSeven = document.querySelector('.buttonHoverSeven');
 
-const buttonEight = document.querySelector('.buttonEight');
-const buttonHoverEight = document.querySelector('.buttonHoverEight');
-
 const buttonNine = document.querySelector('.buttonNine');
 const buttonHoverNine = document.querySelector('.buttonHoverNine');
 
@@ -267,14 +264,6 @@ const buttonAnimEight = (event) => {
     }
 }
 
-buttonEight.addEventListener("focusin", () => {
-    buttonHoverEight.classList.add('hoverAnim');
-});
-
-buttonEight.addEventListener("focusout", () => {
-    buttonHoverEight.classList.add('hoverAnim');
-});
-
 const buttonAnimNine = (event) => {
     if (event.type == 'mouseover')
     {
@@ -318,7 +307,6 @@ buttonFour.onmouseover = buttonFour.onmouseout = buttonAnimFour;
 buttonFive.onmouseover = buttonFive.onmouseout = buttonAnimFive;
 buttonSix.onmouseover = buttonSix.onmouseout = buttonAnimSix;
 buttonSeven.onmouseover = buttonSeven.onmouseout = buttonAnimSeven;
-buttonEight.onmouseover = buttonEight.onmouseout = buttonAnimEight;
 buttonNine.onmouseover = buttonNine.onmouseout = buttonAnimNine;
 buttonTen.onmouseover = buttonTen.onmouseout = buttonAnimTen;
 

@@ -536,6 +536,10 @@ input, label, textarea {
 .skills .tech {
   position: relative;
 }
+.skills .tech h2 {
+  font-size: 1rem;
+  font-family: "Abel", sans-serif;
+}
 .skills .techStack {
   -ms-flex-preferred-size: 25%;
       flex-basis: 25%;
@@ -609,6 +613,10 @@ input, label, textarea {
 .soft {
   margin-top: 80px;
   position: relative;
+}
+.soft h2 {
+  font-size: 1rem;
+  font-family: "Abel", sans-serif;
 }
 .soft .softSkillsP {
   position: relative;
@@ -811,16 +819,153 @@ input, label, textarea {
       flex-basis: 48.5%;
 }
 
+.designProjectsTitle h2 {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: clamp(2rem, 2vw, 3rem);
+  padding: 1rem 0;
+  width: 100%;
+}
+.designProjectsTitle h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  width: 0;
+  border-bottom: solid 1px #000;
+  -webkit-animation: border_anim 3s linear forwards;
+          animation: border_anim 3s linear forwards;
+  bottom: -20px;
+}
+
+.designProjects {
+  padding: 80px 0 40px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+.designProjects .monarch {
+  -ms-flex-preferred-size: 28%;
+      flex-basis: 28%;
+  margin-right: 2%;
+  position: relative;
+}
+.designProjects .monarch figure {
+  padding-bottom: 15px;
+}
+.designProjects .monarch figure img {
+  border-radius: 10px;
+}
+.designProjects .monarch h3 {
+  text-transform: uppercase;
+  font-family: "Abel", sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  padding-bottom: 5px;
+}
+.designProjects .monarch p {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  line-height: 1.2rem;
+}
+.designProjects .monarch::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 40px;
+  width: 0;
+  border-right: solid 1px #000;
+  -webkit-animation: border_anim_Down 3s linear forwards;
+          animation: border_anim_Down 3s linear forwards;
+  right: -35px;
+}
+.designProjects .casssette {
+  -ms-flex-preferred-size: 28%;
+      flex-basis: 28%;
+  margin-right: 2%;
+  position: relative;
+}
+.designProjects .casssette figure {
+  padding-bottom: 15px;
+}
+.designProjects .casssette figure img {
+  border-radius: 10px;
+}
+.designProjects .casssette h3 {
+  text-transform: uppercase;
+  font-family: "Abel", sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  padding-bottom: 5px;
+}
+.designProjects .casssette p {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  line-height: 1.2rem;
+}
+.designProjects .casssette::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 40px;
+  width: 0;
+  border-right: solid 1px #000;
+  -webkit-animation: border_anim_Down 3s linear forwards;
+          animation: border_anim_Down 3s linear forwards;
+  right: -35px;
+}
+.designProjects .tour {
+  -ms-flex-preferred-size: 28%;
+      flex-basis: 28%;
+}
+.designProjects .tour figure {
+  margin-bottom: 20px;
+}
+.designProjects .tour figure img {
+  border-radius: 10px;
+}
+.designProjects .tour h3 {
+  text-transform: uppercase;
+  font-family: "Abel", sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+  padding-bottom: 5px;
+}
+.designProjects .tour p {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  line-height: 1.2rem;
+}
+
+.designProjects::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -25px;
+  width: 0;
+  border-bottom: solid 1px #000;
+  -webkit-animation: border_anim 3s linear forwards;
+          animation: border_anim 3s linear forwards;
+  bottom: -20px;
+}
+
 .contact {
   margin: 80px 0;
   position: relative;
 }
-.contact p {
-  text-transform: uppercase;
-}
 .contact h2 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "Abel", sans-serif;
+  font-weight: 100;
+  margin-bottom: 10px;
+}
+.contact .creating {
   font-size: clamp(2rem, 2vw, 3rem);
   padding-bottom: 10rem;
+  font-weight: 600;
 }
 
 .contactContainer {
@@ -943,22 +1088,6 @@ input, label, textarea {
   border-right: solid 1px #000;
   -webkit-animation: border_anim_Down_C 3s linear forwards;
           animation: border_anim_Down_C 3s linear forwards;
-}
-@-webkit-keyframes border_anim_Down_C {
-  0% {
-    height: 0%;
-  }
-  100% {
-    height: 85%;
-  }
-}
-@keyframes border_anim_Down_C {
-  0% {
-    height: 0%;
-  }
-  100% {
-    height: 85%;
-  }
 }
 
 .aboutText {
@@ -1115,14 +1244,15 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .shoeKloset, .arora {
+  .trivialPursuit,
+  .comfortJournal {
     margin-bottom: 5%;
   }
-  .dropDownKloset,
-  .dropDownArora {
+  .dropDownTrivia,
+  .dropDownComfort {
     width: 100%;
   }
-  .dropDownArora {
+  .dropDownComfort {
     position: static;
   }
   .contactTitle {
@@ -1230,6 +1360,9 @@ footer {
   .headerNav .socialsLinks li {
     margin-right: 2px;
   }
+  .skills .techStack::after {
+    right: 20px;
+  }
   .projectsTitle {
     position: static;
     top: 0;
@@ -1241,6 +1374,12 @@ footer {
   .featuredProjects {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
+  }
+  .designProjects .monarch::after {
+    right: -25px;
+  }
+  .designProjects .casssette::after {
+    right: -25px;
   }
 }
 @media (max-width: 600px) {
@@ -1294,6 +1433,39 @@ footer {
   .skills .skillsLeft {
     padding: 0 2% 0 3%;
   }
+  .designProjects {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .designProjects .monarch {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+  .designProjects .monarch::after {
+    border-right: none;
+  }
+  .designProjects .casssette {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-right: 0;
+    position: relative;
+    border-right: 0;
+    margin-bottom: 30px;
+  }
+  .designProjects .casssette::after {
+    border-right: none;
+  }
+  .designProjects .tour {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    margin-right: 0;
+    position: relative;
+    border-right: 0;
+  }
   .contactContainer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1333,6 +1505,16 @@ footer {
   }
   .footerSocials {
     width: 75%;
+  }
+  .footerLeft {
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+  }
+}
+@media (max-width: 430px) {
+  .footerLeft {
+    -ms-flex-preferred-size: 70%;
+        flex-basis: 70%;
   }
 }
 @media (max-width: 350px) {
