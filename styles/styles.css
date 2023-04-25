@@ -764,6 +764,13 @@ input, label, textarea {
           justify-content: space-between;
   width: 100%;
 }
+.featuredProjects .projectInfo h3 {
+  font-size: 1rem;
+  font-weight: 100;
+  font-family: "Abel", sans-serif;
+  text-transform: uppercase;
+  display: inline;
+}
 .featuredProjects .projectInfo .projectExpand button {
   background-color: inherit;
   border: none;
