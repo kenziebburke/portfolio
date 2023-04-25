@@ -1,3 +1,10 @@
+@media (max-width: 1190px) {
+.skip:focus {
+    left: 30%;
+  }
+}
+
+
 @media (max-width: 950px) {
   // HEADER HERO
   .hero {
@@ -150,6 +157,11 @@
 }
 
 @media (max-width: 760px) {
+
+.skip:focus {
+    left: 45%;
+    top: 0;
+  }
   // HEADER
   .headerNav {
     nav {
@@ -306,6 +318,12 @@
 }
 
 @media (max-width: 500px) {
+
+    .skip:focus {
+        left: 25%;
+        top: 0;
+      }
+
   // SKILLS
   .soft {
     flex-direction: column;

@@ -368,6 +368,25 @@ input, label, textarea {
   font-size: clamp(0.8rem, 2vw, 1rem);
 }
 
+.skip {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 10px 15px;
+  background-color: black;
+  color: white;
+  opacity: 0;
+  border-radius: 5px;
+}
+
+.skip:focus {
+  left: 35%;
+  top: -5px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 1;
+}
+
 .headerNav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1209,6 +1228,11 @@ footer {
   width: 101px;
 }
 
+@media (max-width: 1190px) {
+  .skip:focus {
+    left: 30%;
+  }
+}
 @media (max-width: 950px) {
   .hero .headerTitle p {
     padding-bottom: 150px;
@@ -1349,6 +1373,10 @@ footer {
   }
 }
 @media (max-width: 760px) {
+  .skip:focus {
+    left: 45%;
+    top: 0;
+  }
   .headerNav nav {
     -ms-flex-preferred-size: 20%;
         flex-basis: 20%;
@@ -1491,6 +1519,10 @@ footer {
   }
 }
 @media (max-width: 500px) {
+  .skip:focus {
+    left: 25%;
+    top: 0;
+  }
   .soft {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

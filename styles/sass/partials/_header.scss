@@ -1,6 +1,23 @@
 @use './mixins' as *;
 
 // NAVIGATION MENU STYLING
+.skip {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    opacity: 0;
+    border-radius: 5px;
+  }
+  .skip:focus {
+    left: 35%;
+    top: -5px;
+    transform: translateX(-50%);
+    opacity: 1;
+  }
+  
 .headerNav{
     display: flex;
     justify-content: space-between;
