@@ -2,6 +2,10 @@
 .skip:focus {
     left: 30%;
   }
+
+  .contactNav{
+    width: 40%;
+}
 }
 
 
@@ -74,6 +78,10 @@
     right: -20px;
   }
 
+  .contactNav{
+    width: 50%;
+}
+
   // ABOUT SECTION
   .aboutContainer {
     flex-direction: column;
@@ -100,7 +108,7 @@
 @media (max-width: 900px) {
   // HAMBURGER MENU STARTS HERE
   .headerNav {
-    .socialsLinks {
+    .socialsNav {
       flex-basis: 20%;
     }
 
@@ -201,6 +209,10 @@
       right: -25px;
     }
   }
+
+  .contactNav{
+    width: 70%;
+}
 }
 
 @media (max-width: 600px) {

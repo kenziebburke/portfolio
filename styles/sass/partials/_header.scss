@@ -56,8 +56,13 @@
         display: none;
     }
 
-    .socialsLinks{
+    .socialsNav{
         flex-basis: 13%;
+    }
+
+    .socialsLinks{
+        display: flex;
+        flex-direction: row;
         justify-content: space-between
     }
 }
